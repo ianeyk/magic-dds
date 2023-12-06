@@ -53,16 +53,24 @@ N -40 370 140 370 {
 lab=Vin}
 N -40 -30 -40 370 {
 lab=Vin}
-N 120 430 120 580 {
-lab=#net4}
 N 270 350 570 350 {
 lab=Vout}
 N 570 -30 570 350 {
 lab=Vout}
-N -260 -30 -150 -30 {
+N 120 430 120 520 {
+lab=#net4}
+N -260 -50 -260 -40 {
 lab=Vin}
+N -260 -50 -160 -50 {
+lab=Vin}
+N -160 -50 -160 -30 {
+lab=Vin}
+N -160 -30 -150 -30 {
+lab=Vin}
+N 320 -30 370 -30 {
+lab=Vnode}
 C {madvlsi/capacitor.sym} 260 0 0 0 {name=C1
-value=10p
+value=0.1p
 m=1}
 C {madvlsi/nmos3.sym} 140 -100 1 0 {name=M1
 L=0.15
@@ -118,13 +126,17 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=1u
-.tran 0.05n 10u
-.save all"}
-C {madvlsi/vsource.sym} 350 -30 3 0 {name=VIr
-value=0}
+C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=10n
+.save all
+.control
+save all
+tran 0.05n 1u
+run
+plot v(Vin) v(Vout) v(Vnode) v(phi2)
+plot i(VIin) i(VIr)
+.endc"}
 C {madvlsi/capacitor.sym} 520 0 0 0 {name=C2
-value=100p
+value=1p
 m=1}
 C {devices/lab_pin.sym} 570 -30 2 0 {name=p6 sig_type=std_logic lab=Vout}
 C {madvlsi/pmos3.sym} 140 30 3 0 {name=M3
@@ -169,7 +181,7 @@ C {madvlsi/isource.sym} -260 0 0 0 {name=I1
 value="pulse(0 10u 0 100n 100n 200n 600n)"}
 C {madvlsi/gnd.sym} -260 30 0 0 {name=l12 lab=GND}
 C {madvlsi/capacitor.sym} 50 0 0 0 {name=C3
-value=100p
+value=1p
 m=1}
 C {madvlsi/gnd.sym} 50 30 0 0 {name=l13 lab=GND}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic.sym} 240 350 0 0 {name=x3}
@@ -183,7 +195,9 @@ value=0.9}
 C {madvlsi/gnd.sym} 10 -210 0 0 {name=l18 lab=GND}
 C {devices/lab_pin.sym} 10 -270 1 0 {name=p8 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 140 330 0 0 {name=p11 sig_type=std_logic lab=Vref}
-C {madvlsi/isource.sym} 120 610 0 0 {name=I2
+C {madvlsi/isource.sym} 120 550 0 0 {name=I2
 value=40u}
-C {madvlsi/gnd.sym} 120 640 0 0 {name=l19 lab=GND}
+C {madvlsi/gnd.sym} 120 580 0 0 {name=l19 lab=GND}
 C {devices/lab_pin.sym} -80 -30 1 0 {name=p7 sig_type=std_logic lab=Vin}
+C {madvlsi/ammeter1.sym} -260 -40 0 0 {name=VIin}
+C {madvlsi/ammeter1.sym} 380 -30 1 0 {name=VIr}
