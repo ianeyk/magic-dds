@@ -126,17 +126,18 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=10n
+C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=2.5n
 .save all
 .control
 save all
-tran 0.05n 1u
+tran 0.05n 5u
 run
 plot v(Vin) v(Vout) v(Vnode) v(phi2)
 plot i(VIin) i(VIr)
+plot v(Vout) i(VIin)*50000+v(Vref)
 .endc"}
 C {madvlsi/capacitor.sym} 520 0 0 0 {name=C2
-value=1p
+value=10p
 m=1}
 C {devices/lab_pin.sym} 570 -30 2 0 {name=p6 sig_type=std_logic lab=Vout}
 C {madvlsi/pmos3.sym} 140 30 3 0 {name=M3
@@ -178,10 +179,10 @@ C {madvlsi/vdd.sym} 400 80 0 0 {name=l11 lab=VDD}
 C {devices/lab_pin.sym} 70 110 0 0 {name=p9 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} 370 110 0 0 {name=p10 sig_type=std_logic lab=phi1}
 C {madvlsi/isource.sym} -260 0 0 0 {name=I1
-value="pulse(0 10u 0 100n 100n 200n 600n)"}
+value="pulse(0 10u 0 500n 500n 1u 1u)"}
 C {madvlsi/gnd.sym} -260 30 0 0 {name=l12 lab=GND}
 C {madvlsi/capacitor.sym} 50 0 0 0 {name=C3
-value=1p
+value=0.1p
 m=1}
 C {madvlsi/gnd.sym} 50 30 0 0 {name=l13 lab=GND}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic.sym} 240 350 0 0 {name=x3}
