@@ -546,7 +546,7 @@ C {devices/code_shown.sym} 350 -400 0 0 {name=s1 only_toplevel=false value=".par
 .param P=2.5n
 .save all
 .control
-.nodeset v(Vout)=0.9
+nodeset v(Vout)=0.9
 save all
 tran 0.01n 800n
 run
