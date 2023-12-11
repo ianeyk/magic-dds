@@ -17,7 +17,7 @@ N 230 240 230 260 {
 lab=#net2}
 C {madvlsi/nmos3.sym} 150 120 0 0 {name=M1
 L=0.5
-W=12
+W=3
 body=GND
 nf=1
 mult=1
@@ -32,7 +32,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 300 120 0 1 {name=M2
 L=0.5
-W=12
+W=3
 body=GND
 nf=1
 mult=1

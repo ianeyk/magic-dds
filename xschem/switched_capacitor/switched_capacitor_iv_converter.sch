@@ -80,7 +80,7 @@ lab=#net12}
 N -150 -30 -0 -30 {
 lab=Vin}
 C {madvlsi/capacitor.sym} 260 0 0 0 {name=C1
-value=0.009p
+value=0.005p
 m=1}
 C {madvlsi/nmos3.sym} 140 -100 1 0 {name=M1
 L=0.15
@@ -140,7 +140,7 @@ C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".par
 .control
 save all
 nodeset v(Vout)=0.9
-tran 0.005n 500n
+tran 0.01n 300n
 run
 plot v(Vin) v(Vout) v(Vnode) v(phi2)
 plot i(VIin) i(VIr)
@@ -149,7 +149,7 @@ plot i(VIin) i(VIfeed) i(VIout)
 plot i(VICin) i(VICnode) i(VICout)
 .endc"}
 C {madvlsi/capacitor.sym} 520 0 0 0 {name=C2
-value=5p
+value=1p
 m=1}
 C {devices/lab_pin.sym} 570 -30 2 0 {name=p6 sig_type=std_logic lab=Vout}
 C {madvlsi/pmos3.sym} 140 30 3 0 {name=M3
@@ -189,12 +189,12 @@ C {madvlsi/gnd.sym} 400 140 0 0 {name=l9 lab=GND}
 C {madvlsi/vdd.sym} 100 130 0 0 {name=l10 lab=VDD}
 C {madvlsi/vdd.sym} 400 80 0 0 {name=l11 lab=VDD}
 C {devices/lab_pin.sym} 70 160 0 0 {name=p9 sig_type=std_logic lab=phi1}
-C {devices/lab_pin.sym} 370 110 0 0 {name=p10 sig_type=std_logic lab=phi1}
+C {devices/lab_pin.sym} 370 110 0 0 {name=p10 sig_type=std_logic lab=phi2}
 C {madvlsi/isource.sym} -270 20 0 0 {name=I1
-value="pulse(-10u 10u 0 1n 1n 100n 220n)"}
+value="pulse(-10u 10u 0 1n 1n 70n 150n)"}
 C {madvlsi/gnd.sym} -270 50 0 0 {name=l12 lab=GND}
 C {madvlsi/capacitor.sym} 50 0 0 0 {name=C3
-value=0.009p
+value=0.005p
 m=1}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic.sym} 240 350 0 0 {name=x3}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/bias_schematic.sym} 70 460 0 0 {name=x4}
