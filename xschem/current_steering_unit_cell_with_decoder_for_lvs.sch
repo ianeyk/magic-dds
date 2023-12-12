@@ -242,7 +242,7 @@ C {devices/lab_pin.sym} -40 -110 0 0 {name=p17 sig_type=std_logic lab=Y}
 C {devices/iopin.sym} 70 90 1 0 {name=p8 lab=VN2}
 C {madvlsi/vdd.sym} 400 -200 0 0 {name=l1 lab=VDD}
 C {madvlsi/vdd.sym} 540 -200 0 0 {name=l3 lab=VDD}
-C {madvlsi/vdd.sym} 700 -130 0 0 {name=l4 lab=VDD}
+C {madvlsi/vdd.sym} 700 -120 0 0 {name=l4 lab=VDD}
 C {madvlsi/gnd.sym} 700 40 0 0 {name=l5 lab=GND}
 C {madvlsi/gnd.sym} 540 120 0 0 {name=l6 lab=GND}
 C {madvlsi/gnd.sym} 400 120 0 0 {name=l7 lab=GND}
