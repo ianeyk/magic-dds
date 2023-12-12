@@ -815,10 +815,6 @@ C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} -130 840 0 0 {n
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 140 840 0 0 {name=x67}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 410 840 0 0 {name=x68}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 680 840 0 0 {name=x69}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 0 850 0 0 {name=x70}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 270 850 0 0 {name=x71}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 540 850 0 0 {name=x72}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 810 850 0 0 {name=x73}
 C {madvlsi/gnd.sym} 1400 920 0 0 {name=l114 lab=GND}
 C {madvlsi/gnd.sym} 1670 920 0 0 {name=l115 lab=GND}
 C {madvlsi/gnd.sym} 1940 920 0 0 {name=l116 lab=GND}
@@ -836,10 +832,6 @@ C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 1270 840 0 0 {n
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 1540 840 0 0 {name=x75}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 1810 840 0 0 {name=x76}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 2080 840 0 0 {name=x77}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 1400 850 0 0 {name=x78}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 1670 850 0 0 {name=x79}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 1940 850 0 0 {name=x80}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 2210 850 0 0 {name=x81}
 C {madvlsi/gnd.sym} 0 -270 0 0 {name=l55 lab=GND}
 C {madvlsi/gnd.sym} 270 -270 0 0 {name=l126 lab=GND}
 C {madvlsi/gnd.sym} 540 -270 0 0 {name=l127 lab=GND}
@@ -858,10 +850,6 @@ C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} -130 -350 0 0 {
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 140 -350 0 0 {name=x83}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 410 -350 0 0 {name=x84}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 680 -350 0 0 {name=x85}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 0 -340 0 0 {name=x86}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 270 -340 0 0 {name=x87}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 540 -340 0 0 {name=x88}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 810 -340 0 0 {name=x89}
 C {madvlsi/gnd.sym} 1400 -270 0 0 {name=l138 lab=GND}
 C {madvlsi/gnd.sym} 1670 -270 0 0 {name=l139 lab=GND}
 C {madvlsi/gnd.sym} 1940 -270 0 0 {name=l140 lab=GND}
@@ -880,10 +868,6 @@ C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 1270 -350 0 0 {
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 1540 -350 0 0 {name=x91}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 1810 -350 0 0 {name=x92}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 2080 -350 0 0 {name=x93}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 1400 -340 0 0 {name=x94}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 1670 -340 0 0 {name=x95}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 1940 -340 0 0 {name=x96}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 2210 -340 0 0 {name=x97}
 C {madvlsi/gnd.sym} -440 60 0 0 {name=l150 lab=GND}
 C {madvlsi/vdd.sym} -570 -70 0 0 {name=l151 lab=VDD}
 C {madvlsi/gnd.sym} -570 60 0 0 {name=l152 lab=GND}
@@ -900,21 +884,15 @@ C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} -570 -20 0 0 {n
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} -570 200 0 0 {name=x99}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} -570 420 0 0 {name=x100}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} -570 630 0 0 {name=x101}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} -440 -10 0 0 {name=x102}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} -440 210 0 0 {name=x103}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} -440 430 0 0 {name=x104}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} -440 640 0 0 {name=x105}
 C {madvlsi/gnd.sym} -440 710 0 0 {name=l162 lab=GND}
 C {madvlsi/gnd.sym} -440 920 0 0 {name=l163 lab=GND}
 C {madvlsi/vdd.sym} -570 790 0 0 {name=l164 lab=VDD}
 C {madvlsi/gnd.sym} -570 920 0 0 {name=l165 lab=GND}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} -570 840 0 0 {name=x106}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} -440 850 0 0 {name=x107}
 C {madvlsi/gnd.sym} -440 -270 0 0 {name=l166 lab=GND}
 C {madvlsi/vdd.sym} -570 -400 0 0 {name=l167 lab=VDD}
 C {madvlsi/gnd.sym} -570 -270 0 0 {name=l168 lab=GND}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} -570 -350 0 0 {name=x108}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} -440 -340 0 0 {name=x109}
 C {madvlsi/gnd.sym} -690 -350 0 0 {name=l137 lab=GND}
 C {madvlsi/gnd.sym} -610 -120 1 0 {name=l169 lab=GND}
 C {madvlsi/gnd.sym} 2490 60 0 0 {name=l170 lab=GND}
@@ -933,21 +911,15 @@ C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 2360 -20 0 0 {n
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 2360 200 0 0 {name=x111}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 2360 420 0 0 {name=x112}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 2360 630 0 0 {name=x113}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 2490 -10 0 0 {name=x114}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 2490 210 0 0 {name=x115}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 2490 430 0 0 {name=x116}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 2490 640 0 0 {name=x117}
 C {madvlsi/gnd.sym} 2490 710 0 0 {name=l182 lab=GND}
 C {madvlsi/gnd.sym} 2490 920 0 0 {name=l183 lab=GND}
 C {madvlsi/vdd.sym} 2360 790 0 0 {name=l184 lab=VDD}
 C {madvlsi/gnd.sym} 2360 920 0 0 {name=l185 lab=GND}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 2360 840 0 0 {name=x118}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 2490 850 0 0 {name=x119}
 C {madvlsi/gnd.sym} 2490 -270 0 0 {name=l186 lab=GND}
 C {madvlsi/vdd.sym} 2360 -400 0 0 {name=l187 lab=VDD}
 C {madvlsi/gnd.sym} 2360 -270 0 0 {name=l188 lab=GND}
 C {/home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym} 2360 -350 0 0 {name=x120}
-C {/home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym} 2490 -340 0 0 {name=x121}
 C {madvlsi/gnd.sym} 2320 -120 1 0 {name=l190 lab=GND}
 C {madvlsi/gnd.sym} 1250 -120 3 0 {name=l100 lab=GND}
 C {devices/ipin.sym} 2640 -180 2 0 {name=p4 lab=I1}
@@ -961,3 +933,31 @@ C {devices/ipin.sym} -230 200 1 0 {name=p6 lab=Y1}
 C {devices/ipin.sym} -230 420 1 0 {name=p7 lab=Y2}
 C {devices/ipin.sym} -230 630 1 0 {name=p11 lab=Y3}
 C {madvlsi/gnd.sym} -690 840 0 0 {name=l189 lab=GND}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} -440 -340 0 0 {name=x35}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} -440 -10 0 0 {name=x70}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} -440 210 0 0 {name=x71}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} -440 430 0 0 {name=x72}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} -440 640 0 0 {name=x73}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} -440 850 0 0 {name=x78}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 0 850 0 0 {name=x79}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 270 850 0 0 {name=x80}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 540 850 0 0 {name=x81}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 810 850 0 0 {name=x86}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 1400 850 0 0 {name=x87}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 1670 850 0 0 {name=x88}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 1940 850 0 0 {name=x89}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 2210 850 0 0 {name=x94}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 2490 850 0 0 {name=x95}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 2490 640 0 0 {name=x96}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 2490 430 0 0 {name=x97}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 2490 210 0 0 {name=x102}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 2490 -10 0 0 {name=x103}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 2490 -340 0 0 {name=x104}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 2210 -340 0 0 {name=x105}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 1940 -340 0 0 {name=x107}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 1670 -340 0 0 {name=x109}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 1400 -340 0 0 {name=x114}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 810 -340 0 0 {name=x115}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 540 -340 0 0 {name=x116}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 270 -340 0 0 {name=x117}
+C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 0 -340 0 0 {name=x119}

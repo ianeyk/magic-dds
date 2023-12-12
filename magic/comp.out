@@ -1,25 +1,27 @@
 
-Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-
 Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
-Flattening unmatched subcell current_steering_cell in circuit unit_cell_for_lvs.spice (0)(1 instance)
-Flattening unmatched subcell unit_cell_decoder in circuit unit_cell_for_lvs.spice (0)(1 instance)
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell unit_cell_decoder in circuit dummy_unit_cell_for_lvs.spice (0)(1 instance)
+Flattening unmatched subcell dummy_current_steering_cell in circuit dummy_unit_cell_for_lvs.spice (0)(1 instance)
 
 Subcircuit summary:
-Circuit 1: unit_cell_for_lvs.spice         |Circuit 2: current_steering_dac_unit_cell_ 
+Circuit 1: dummy_unit_cell_for_lvs.spice   |Circuit 2: dummy_current_steering_dac_unit 
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (8)                |sky130_fd_pr__nfet_01v8 (8)                
 sky130_fd_pr__pfet_01v8 (4)                |sky130_fd_pr__pfet_01v8 (4)                
+sky130_fd_pr__nfet_01v8 (8)                |sky130_fd_pr__nfet_01v8 (8)                
 Number of devices: 12                      |Number of devices: 12                      
 Number of nets: 16                         |Number of nets: 16                         
 ---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
 Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
-Device classes unit_cell_for_lvs.spice and current_steering_dac_unit_cell_with_encoder.spice are equivalent.
+Device classes dummy_unit_cell_for_lvs.spice and dummy_current_steering_dac_unit_cell_with_encoder.spice are equivalent.
 
 Final result: Circuits match uniquely.
 .
