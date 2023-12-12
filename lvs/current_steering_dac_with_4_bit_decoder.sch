@@ -961,3 +961,31 @@ C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 810 -340
 C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 540 -340 0 0 {name=x116}
 C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 270 -340 0 0 {name=x117}
 C {/home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym} 0 -340 0 0 {name=x119}
+C {madvlsi/gnd.sym} -420 -270 0 0 {name=l71 lab=GND}
+C {madvlsi/gnd.sym} 20 -270 0 0 {name=l72 lab=GND}
+C {madvlsi/gnd.sym} 290 -270 0 0 {name=l191 lab=GND}
+C {madvlsi/gnd.sym} 560 -270 0 0 {name=l192 lab=GND}
+C {madvlsi/gnd.sym} 830 -270 0 0 {name=l193 lab=GND}
+C {madvlsi/gnd.sym} 1420 -270 0 0 {name=l194 lab=GND}
+C {madvlsi/gnd.sym} 1690 -270 0 0 {name=l195 lab=GND}
+C {madvlsi/gnd.sym} 1960 -270 0 0 {name=l196 lab=GND}
+C {madvlsi/gnd.sym} 2230 -270 0 0 {name=l197 lab=GND}
+C {madvlsi/gnd.sym} 2510 -270 0 0 {name=l198 lab=GND}
+C {madvlsi/gnd.sym} 2510 60 0 0 {name=l199 lab=GND}
+C {madvlsi/gnd.sym} 2510 280 0 0 {name=l200 lab=GND}
+C {madvlsi/gnd.sym} 2510 500 0 0 {name=l201 lab=GND}
+C {madvlsi/gnd.sym} 2510 710 0 0 {name=l202 lab=GND}
+C {madvlsi/gnd.sym} 2510 920 0 0 {name=l203 lab=GND}
+C {madvlsi/gnd.sym} 2230 920 0 0 {name=l204 lab=GND}
+C {madvlsi/gnd.sym} 1960 920 0 0 {name=l205 lab=GND}
+C {madvlsi/gnd.sym} 1690 920 0 0 {name=l206 lab=GND}
+C {madvlsi/gnd.sym} 1420 920 0 0 {name=l207 lab=GND}
+C {madvlsi/gnd.sym} 830 920 0 0 {name=l208 lab=GND}
+C {madvlsi/gnd.sym} 560 920 0 0 {name=l209 lab=GND}
+C {madvlsi/gnd.sym} 290 920 0 0 {name=l210 lab=GND}
+C {madvlsi/gnd.sym} 20 920 0 0 {name=l211 lab=GND}
+C {madvlsi/gnd.sym} -420 920 0 0 {name=l212 lab=GND}
+C {madvlsi/gnd.sym} -420 710 0 0 {name=l213 lab=GND}
+C {madvlsi/gnd.sym} -420 500 0 0 {name=l214 lab=GND}
+C {madvlsi/gnd.sym} -420 280 0 0 {name=l215 lab=GND}
+C {madvlsi/gnd.sym} -420 60 0 0 {name=l216 lab=GND}
