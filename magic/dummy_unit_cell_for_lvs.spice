@@ -1,0 +1,80 @@
+** sch_path: /home/madvlsi/dev/git/magic-dds/lvs/dummy_unit_cell_for_lvs.sch
+**.subckt dummy_unit_cell_for_lvs Vx Vx1 Hy I1 I2 Vcn Vbn GND2
+*.ipin Vx
+*.ipin Vx1
+*.ipin Hy
+*.ipin I1
+*.ipin I2
+*.ipin Vcn
+*.ipin Vbn
+*.iopin GND2
+x2 Vx Vx1 Hy VDD GND net1 net2 unit_cell_decoder
+x1 I1 I2 Vcn Vbn GND GND2 dummy_current_steering_cell
+**.ends
+
+* expanding   symbol:  /home/madvlsi/dev/git/magic-dds/lvs/unit_cell_decoder.sym # of pins=7
+** sym_path: /home/madvlsi/dev/git/magic-dds/lvs/unit_cell_decoder.sym
+** sch_path: /home/madvlsi/dev/git/magic-dds/lvs/unit_cell_decoder.sch
+.subckt unit_cell_decoder Vx Vx1 Hy VP VN Yb Y
+*.ipin Vx
+*.ipin Vx1
+*.ipin Hy
+*.iopin VP
+*.iopin VN
+*.opin Y
+*.opin Yb
+XM1 net1 Hy VP VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Yb Vx1 net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 VP Vx net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Yb Hy net2 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 Yb Vx1 VN GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 VN Vx net2 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 VP Yb Y VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 VN Yb Y GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym # of
+*+ pins=6
+** sym_path: /home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym
+** sch_path: /home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sch
+.subckt dummy_current_steering_cell Iin Idump Vcn Vbn VN VN2
+*.iopin VN2
+*.ipin Vcn
+*.ipin Iin
+*.ipin Idump
+*.ipin Vbn
+*.iopin VN
+XM1 Iin VN net1 GND sky130_fd_pr__nfet_01v8 L=0.5 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Idump VN net1 GND sky130_fd_pr__nfet_01v8 L=0.5 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net2 Vbn VN2 GND sky130_fd_pr__nfet_01v8 L=0.5 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 Vcn net2 GND sky130_fd_pr__nfet_01v8 L=0.5 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end

@@ -1,0 +1,124 @@
+magic
+tech sky130A
+timestamp 1702367632
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_0
+timestamp 1702366404
+transform 1 0 0 0 1 15
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_1
+timestamp 1702366404
+transform 1 0 650 0 1 15
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_2
+timestamp 1702366404
+transform 1 0 1300 0 1 15
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_3
+timestamp 1702366404
+transform 1 0 1950 0 1 15
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_4
+timestamp 1702366404
+transform 1 0 0 0 1 1330
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_5
+timestamp 1702366404
+transform 1 0 650 0 1 1330
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_6
+timestamp 1702366404
+transform 1 0 1300 0 1 1330
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_7
+timestamp 1702366404
+transform 1 0 1950 0 1 1330
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_8
+timestamp 1702366404
+transform 1 0 0 0 1 2645
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_9
+timestamp 1702366404
+transform 1 0 650 0 1 2645
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_10
+timestamp 1702366404
+transform 1 0 1300 0 1 2645
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_11
+timestamp 1702366404
+transform 1 0 1950 0 1 2645
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_12
+timestamp 1702366404
+transform 1 0 0 0 1 3960
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_13
+timestamp 1702366404
+transform 1 0 650 0 1 3960
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_14
+timestamp 1702366404
+transform 1 0 1300 0 1 3960
+box 0 -15 650 1300
+use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_15
+timestamp 1702366404
+transform 1 0 1950 0 1 3960
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_0 ~/dev/git/magic-dds/magic
+timestamp 1702366378
+transform 1 0 -650 0 1 5275
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_1
+timestamp 1702366378
+transform 1 0 -650 0 1 3960
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_2
+timestamp 1702366378
+transform 1 0 -650 0 1 2645
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_3
+timestamp 1702366378
+transform 1 0 -650 0 1 1330
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_4
+timestamp 1702366378
+transform 1 0 -650 0 1 15
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_5
+timestamp 1702366378
+transform 1 0 -650 0 1 -1300
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_6
+timestamp 1702366378
+transform 1 0 0 0 1 -1300
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_7
+timestamp 1702366378
+transform 1 0 650 0 1 -1300
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_8
+timestamp 1702366378
+transform 1 0 1300 0 1 -1300
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_9
+timestamp 1702366378
+transform 1 0 1950 0 1 -1300
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_10
+timestamp 1702366378
+transform 1 0 0 0 1 5275
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_11
+timestamp 1702366378
+transform 1 0 650 0 1 5275
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_12
+timestamp 1702366378
+transform 1 0 1300 0 1 5275
+box 0 -15 650 1300
+use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_13
+timestamp 1702366378
+transform 1 0 1950 0 1 5275
+box 0 -15 650 1300
+<< end >>

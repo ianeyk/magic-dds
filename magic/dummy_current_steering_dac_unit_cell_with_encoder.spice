@@ -1,0 +1,18 @@
+* SPICE3 file created from dummy_current_steering_dac_unit_cell_with_encoder.ext - technology: sky130A
+
+*.subckt dummy_current_steering_dac_unit_cell_with_encoder I1 I2 Vbn Vcn Vx Vx1 Vy
++ VP VN VN2
+X0 a_200_0# Vbn VN2 VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X1 a_870_2050# Vy VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X2 a_530_1630# Vy a_560_2180# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X3 VP Vx a_870_2050# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X4 a_400_0# Vcn a_200_0# VN sky130_fd_pr__nfet_01v8 ad=3.3 pd=12.7 as=3 ps=12.5 w=12 l=0.5
+X5 VP a_530_1630# a_560_1530# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X6 a_560_2180# Vx VN VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X7 a_870_2050# Vx1 a_530_1630# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X8 VN a_530_1630# a_560_1530# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X9 I1 VN a_400_0# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=2.2 ps=8.47 w=3 l=0.5
+X10 VN Vx1 a_530_1630# VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X11 I2 VN a_400_0# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=2.2 ps=8.47 w=3 l=0.5
+*.ends
+
