@@ -15,8 +15,6 @@ N 30 -90 30 -40 {
 lab=vp}
 N 120 90 120 130 {
 lab=b0}
-N 100 100 140 100 {
-lab=_b0}
 N 140 100 140 130 {
 lab=_b0}
 N 140 100 290 100 {
@@ -297,23 +295,37 @@ N 1820 90 1820 130 {
 lab=_b7}
 N 1820 100 1830 100 {
 lab=_b7}
-N 30 -40 30 30 {
-lab=vp}
-N -10 30 30 30 {
-lab=vp}
-N 30 30 60 30 {
-lab=vp}
-N 70 -40 70 90 {
-lab=vn}
-N -10 90 70 90 {
-lab=vn}
-N 100 60 120 60 {
-lab=b0}
-N 120 60 120 90 {
-lab=b0}
-N 30 60 30 100 {
+N -40 60 50 60 {
+lab=clk}
+N 50 40 50 60 {
+lab=clk}
+N 90 20 120 20 {
 lab=_b0}
-N 30 100 100 100 {
+N -20 50 120 50 {
+lab=_b0}
+N -20 -20 -20 50 {
+lab=_b0}
+N -20 -20 10 -20 {
+lab=_b0}
+N -0 20 10 20 {
+lab=b0}
+N -0 20 0 80 {
+lab=b0}
+N 0 80 100 80 {
+lab=b0}
+N 100 -20 100 80 {
+lab=b0}
+N 90 -20 100 -20 {
+lab=b0}
+N 120 80 120 90 {
+lab=b0}
+N 100 80 120 80 {
+lab=b0}
+N 120 20 120 50 {
+lab=_b0}
+N 120 50 140 50 {
+lab=_b0}
+N 140 50 140 100 {
 lab=_b0}
 C {devices/iopin.sym} -40 -90 2 0 {name=p1 lab=vp}
 C {devices/iopin.sym} -40 -60 2 0 {name=p2 lab=vn
@@ -344,5 +356,4 @@ C {devices/opin.sym} 1580 130 1 0 {name=p17 lab=_b6}
 C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/dflipflop.sym} 1730 40 0 0 {name=X8}
 C {devices/opin.sym} 1800 130 1 0 {name=p18 lab=b7}
 C {devices/opin.sym} 1820 130 1 0 {name=p19 lab=_b7}
-C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/inverter.sym} -40 60 0 0 {name=x9}
-C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/inverter.sym} 30 60 0 0 {name=x10}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/dflipflop.sym} 50 40 0 0 {name=X1}
