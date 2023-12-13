@@ -40,7 +40,7 @@ lab=#net2}
 N 440 60 440 110 {
 lab=#net3}
 C {madvlsi/capacitor.sym} 260 0 0 0 {name=C1
-value=100p
+value=1n
 m=1}
 C {madvlsi/nmos3.sym} 140 -100 1 0 {name=M1
 L=0.15
@@ -102,7 +102,7 @@ C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".par
 C {madvlsi/vsource.sym} 350 -30 3 0 {name=VIr
 value=0}
 C {madvlsi/capacitor.sym} 520 0 0 0 {name=C2
-value=10n
+value=100p
 m=1}
 C {devices/lab_pin.sym} 570 -30 2 0 {name=p6 sig_type=std_logic lab=Vout}
 C {madvlsi/vsource.sym} 90 -370 0 0 {name=Vin
