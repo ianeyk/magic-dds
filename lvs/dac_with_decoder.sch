@@ -37,7 +37,10 @@ N 90 -260 90 -90 {
 lab=#net8}
 N 10 -260 90 -260 {
 lab=#net8}
-C {/home/madvlsi/dev/git/magic-dds/lvs/current_steering_dac.sym} -140 -10 0 1 {name=x1}
+N -140 90 -40 90 {}
+N -40 10 -40 90 {}
+N -140 110 -60 110 {}
+N -60 10 -60 110 {}
 C {/home/madvlsi/dev/git/magic-dds/xschem/binary_decoder_4bit.sym} -140 -180 0 0 {name=x2}
 C {madvlsi/vdd.sym} -90 -300 0 0 {name=l1 lab=VDD}
 C {madvlsi/gnd.sym} -50 -300 2 0 {name=l2 lab=GND}
@@ -47,3 +50,7 @@ C {devices/ipin.sym} -150 -220 0 0 {name=p3 lab=b2}
 C {devices/ipin.sym} -150 -200 0 0 {name=p4 lab=b3}
 C {devices/ipin.sym} -140 -50 0 0 {name=p5 lab=I1}
 C {devices/ipin.sym} -140 -30 0 0 {name=p6 lab=I2}
+C {/home/madvlsi/dev/git/magic-dds/lvs/current_steering_dac.sym} -140 -10 0 1 {name=x1}
+C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/bias_schematic.sym} -180 80 0 0 {name=x3}
+C {madvlsi/vdd.sym} -180 30 0 0 {name=l3 lab=VDD}
+C {madvlsi/gnd.sym} -180 130 0 0 {name=l4 lab=GND}
