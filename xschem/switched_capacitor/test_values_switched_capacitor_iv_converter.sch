@@ -90,7 +90,7 @@ lab=#net11}
 N -560 90 -330 90 {
 lab=#net11}
 C {madvlsi/capacitor.sym} 260 0 0 0 {name=C1
-value=0.01p
+value=5p
 m=1}
 C {madvlsi/nmos3.sym} 140 -100 1 0 {name=M1
 L=0.15
@@ -141,12 +141,13 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=10n
+C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=100n
+*.ac dec 20 1 1e9
 .save all
 .control
 save all
 nodeset v(Vout)=0.9
-tran 0.01n 10000n
+tran 0.1n 10000n
 run
 plot v(Vin) v(Vout) v(Vnode) v(phi2)
 plot i(VIin) i(VIr)
@@ -155,6 +156,7 @@ plot i(VIin) i(VIfeed) i(VIout)
 plot i(VICin) i(VICnode) i(VICout)
 set wr_singlescale
 set wr_vecnames
+wrdata sin_out_7.txt i(VIin) v(Vout)
 .endc"}
 C {madvlsi/capacitor.sym} 520 0 0 0 {name=C2
 value=10p
@@ -200,7 +202,6 @@ C {madvlsi/gnd.sym} -270 50 0 0 {name=l12 lab=GND}
 C {madvlsi/capacitor.sym} 50 0 0 0 {name=C3
 value=0.01p
 m=1}
-C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic.sym} 430 480 0 0 {name=x3}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/bias_schematic.sym} 70 460 0 0 {name=x4}
 C {madvlsi/vdd.sym} 180 280 0 0 {name=l14 lab=VDD}
 C {madvlsi/vdd.sym} 70 410 0 0 {name=l15 lab=VDD}
@@ -231,9 +232,9 @@ C {madvlsi/capacitor.sym} 260 180 1 0 {name=C4
 value=1p
 m=1}
 C {madvlsi/isource.sym} -330 140 0 0 {name=I3
-value="sin(0 10u 2meg 0 0 0)"}
+value="sin(0 10u 0.2meg 0 0 0)"}
 C {madvlsi/gnd.sym} -330 170 0 0 {name=l4 lab=GND}
 C {madvlsi/gnd.sym} -560 160 0 0 {name=l9 lab=GND}
 C {madvlsi/isource.sym} -560 130 0 0 {name=I4
-value="pulse(-1u 1u 0 1n 1n 20n 42n)"}
+value="pulse(-1u 1u 0 1n 1n 200n 402n)"}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic_balanced.sym} 240 350 0 0 {name=x2}

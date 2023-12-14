@@ -24,6 +24,8 @@ def find_range(f, x):
     """
     Find range between nearest local minima from peak at index x
     """
+    lowermin = x-2
+    uppermin = x+2
     for i in arange(x+1, len(f)):
         if f[i+1] >= f[i]:
             uppermin = i
@@ -65,6 +67,8 @@ def THDN(signal, sample_rate):
     # Not exact
     print('Frequency: %f Hz' % (sample_rate * (i / len(windowed))))
     lowermin, uppermin = find_range(abs(f), i)
+    print(lowermin)
+    print(uppermin)
     f[lowermin: uppermin] = 0
 
     # Transform noise back into the signal domain and measure it
