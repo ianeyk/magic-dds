@@ -1103,13 +1103,16 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 1140 -520 0 0 {name=p1 lab=Vbp}
-C {devices/ipin.sym} 1140 -390 0 0 {name=p2 lab=Vcp}
+C {devices/ipin.sym} 1140 -520 0 0 {name=p1 lab=Vbp
+W=3}
+C {devices/ipin.sym} 1140 -390 0 0 {name=p2 lab=Vcp
+W=3}
 C {devices/ipin.sym} 1140 -220 0 0 {name=p3 lab=Vcn}
 C {devices/ipin.sym} 830 -230 2 0 {name=p4 lab=V2}
 C {devices/ipin.sym} 60 -230 0 0 {name=p5 lab=V1}
 C {devices/ipin.sym} 60 -90 0 0 {name=p6 lab=Vb}
-C {devices/iopin.sym} 1530 -560 3 0 {name=p7 lab=VP}
+C {devices/iopin.sym} 1530 -560 3 0 {name=p7 lab=VP
+W=3}
 C {devices/iopin.sym} 1530 -50 1 0 {name=p8 lab=VN}
 C {devices/opin.sym} 1860 -300 0 0 {name=p9 lab=Vout}
 C {devices/lab_pin.sym} 780 -160 2 0 {name=p10 sig_type=std_logic lab=Vnode}

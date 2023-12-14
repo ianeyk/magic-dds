@@ -146,16 +146,18 @@ C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".par
 .control
 save all
 nodeset v(Vout)=0.9
-tran 0.01n 500n
+tran 0.01n 10000n
 run
 plot v(Vin) v(Vout) v(Vnode) v(phi2)
 plot i(VIin) i(VIr)
 plot v(Vout) i(VIin)*50000+v(Vref)
 plot i(VIin) i(VIfeed) i(VIout)
 plot i(VICin) i(VICnode) i(VICout)
+set wr_singlescale
+set wr_vecnames
 .endc"}
 C {madvlsi/capacitor.sym} 520 0 0 0 {name=C2
-value=1p
+value=10p
 m=1}
 C {devices/lab_pin.sym} 570 -30 2 0 {name=p6 sig_type=std_logic lab=Vout}
 C {madvlsi/pmos3.sym} 140 30 3 0 {name=M3
@@ -198,7 +200,7 @@ C {madvlsi/gnd.sym} -270 50 0 0 {name=l12 lab=GND}
 C {madvlsi/capacitor.sym} 50 0 0 0 {name=C3
 value=0.01p
 m=1}
-C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic.sym} 240 350 0 0 {name=x3}
+C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic.sym} 430 480 0 0 {name=x3}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/bias_schematic.sym} 70 460 0 0 {name=x4}
 C {madvlsi/vdd.sym} 180 280 0 0 {name=l14 lab=VDD}
 C {madvlsi/vdd.sym} 70 410 0 0 {name=l15 lab=VDD}
@@ -234,3 +236,4 @@ C {madvlsi/gnd.sym} -330 170 0 0 {name=l4 lab=GND}
 C {madvlsi/gnd.sym} -560 160 0 0 {name=l9 lab=GND}
 C {madvlsi/isource.sym} -560 130 0 0 {name=I4
 value="pulse(-1u 1u 0 1n 1n 20n 42n)"}
+C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic_balanced.sym} 240 350 0 0 {name=x2}
