@@ -1,0 +1,228 @@
+** sch_path: /home/madvlsi/dev/git/magic-dds/lvs/current_steering_dac.sch
+**.subckt current_steering_dac I1 I2 X0 X1 X2 X3 Y0 Y1 Y2 Y3 Vcn Vbn
+*.ipin I1
+*.ipin I2
+*.ipin X0
+*.ipin X1
+*.ipin X2
+*.ipin X3
+*.ipin Y0
+*.ipin Y1
+*.ipin Y2
+*.ipin Y3
+*.ipin Vcn
+*.ipin Vbn
+x5 X0 X1 Y0 VDD GND net1 net2 unit_cell_decoder
+x7 X1 X2 Y0 VDD GND net3 net4 unit_cell_decoder
+x8 X2 X3 Y0 VDD GND net5 net6 unit_cell_decoder
+x9 X3 GND Y0 VDD GND net7 net8 unit_cell_decoder
+x14 X0 X1 Y1 VDD GND net9 net10 unit_cell_decoder
+x15 X1 X2 Y1 VDD GND net11 net12 unit_cell_decoder
+x16 X2 X3 Y1 VDD GND net13 net14 unit_cell_decoder
+x17 X3 GND Y1 VDD GND net15 net16 unit_cell_decoder
+x22 X0 X1 Y2 VDD GND net17 net18 unit_cell_decoder
+x23 X1 X2 Y2 VDD GND net19 net20 unit_cell_decoder
+x24 X2 X3 Y2 VDD GND net21 net22 unit_cell_decoder
+x25 X3 GND Y2 VDD GND net23 net24 unit_cell_decoder
+x30 X0 X1 Y3 VDD GND net25 net26 unit_cell_decoder
+x31 X1 X2 Y3 VDD GND net27 net28 unit_cell_decoder
+x32 X2 X3 Y3 VDD GND net29 net30 unit_cell_decoder
+x33 X3 GND Y3 VDD GND net31 net32 unit_cell_decoder
+x1 I1 I2 net1 net2 Vcn Vbn GND current_steering_cell
+x2 I1 I2 net3 net4 Vcn Vbn GND current_steering_cell
+x3 I1 I2 net5 net6 Vcn Vbn GND current_steering_cell
+x4 I1 I2 net7 net8 Vcn Vbn GND current_steering_cell
+x10 I1 I2 net9 net10 Vcn Vbn GND current_steering_cell
+x11 I1 I2 net11 net12 Vcn Vbn GND current_steering_cell
+x12 I1 I2 net13 net14 Vcn Vbn GND current_steering_cell
+x13 I1 I2 net15 net16 Vcn Vbn GND current_steering_cell
+x18 I1 I2 net17 net18 Vcn Vbn GND current_steering_cell
+x19 I1 I2 net19 net20 Vcn Vbn GND current_steering_cell
+x20 I1 I2 net21 net22 Vcn Vbn GND current_steering_cell
+x21 I1 I2 net23 net24 Vcn Vbn GND current_steering_cell
+x26 I1 I2 net25 net26 Vcn Vbn GND current_steering_cell
+x27 I1 I2 net27 net28 Vcn Vbn GND current_steering_cell
+x28 I1 I2 net29 net30 Vcn Vbn GND current_steering_cell
+x29 I1 I2 net31 net32 Vcn Vbn GND current_steering_cell
+x6 X3 GND Y3 VDD GND net33 net34 unit_cell_decoder
+x34 X2 X3 Y3 VDD GND net35 net36 unit_cell_decoder
+x36 X1 X2 Y3 VDD GND net37 net38 unit_cell_decoder
+x37 X0 X1 Y3 VDD GND net39 net40 unit_cell_decoder
+x38 X3 GND Y2 VDD GND net41 net42 unit_cell_decoder
+x39 X2 X3 Y2 VDD GND net43 net44 unit_cell_decoder
+x40 X1 X2 Y2 VDD GND net45 net46 unit_cell_decoder
+x41 X0 X1 Y2 VDD GND net47 net48 unit_cell_decoder
+x42 X3 GND Y1 VDD GND net49 net50 unit_cell_decoder
+x43 X2 X3 Y1 VDD GND net51 net52 unit_cell_decoder
+x44 X1 X2 Y1 VDD GND net53 net54 unit_cell_decoder
+x45 X0 X1 Y1 VDD GND net55 net56 unit_cell_decoder
+x46 X3 GND Y0 VDD GND net57 net58 unit_cell_decoder
+x47 X2 X3 Y0 VDD GND net59 net60 unit_cell_decoder
+x48 X1 X2 Y0 VDD GND net61 net62 unit_cell_decoder
+x49 X0 X1 Y0 VDD GND net63 net64 unit_cell_decoder
+x50 I1 I2 net33 net34 Vcn Vbn GND current_steering_cell
+x51 I1 I2 net35 net36 Vcn Vbn GND current_steering_cell
+x52 I1 I2 net37 net38 Vcn Vbn GND current_steering_cell
+x53 I1 I2 net39 net40 Vcn Vbn GND current_steering_cell
+x54 I1 I2 net41 net42 Vcn Vbn GND current_steering_cell
+x55 I1 I2 net43 net44 Vcn Vbn GND current_steering_cell
+x56 I1 I2 net45 net46 Vcn Vbn GND current_steering_cell
+x57 I1 I2 net47 net48 Vcn Vbn GND current_steering_cell
+x58 I1 I2 net49 net50 Vcn Vbn GND current_steering_cell
+x59 I1 I2 net51 net52 Vcn Vbn GND current_steering_cell
+x60 I1 I2 net53 net54 Vcn Vbn GND current_steering_cell
+x61 I1 I2 net55 net56 Vcn Vbn GND current_steering_cell
+x62 I1 I2 net57 net58 Vcn Vbn GND current_steering_cell
+x63 I1 I2 net59 net60 Vcn Vbn GND current_steering_cell
+x64 I1 I2 net61 net62 Vcn Vbn GND current_steering_cell
+x65 I1 I2 net63 net64 Vcn Vbn GND current_steering_cell
+x66 X0 X1 GND VDD GND net65 net66 unit_cell_decoder
+x67 X1 X2 GND VDD GND net67 net68 unit_cell_decoder
+x68 X2 X3 GND VDD GND net69 net70 unit_cell_decoder
+x69 X3 GND GND VDD GND net71 net72 unit_cell_decoder
+x74 X3 GND GND VDD GND net73 net74 unit_cell_decoder
+x75 X2 X3 GND VDD GND net75 net76 unit_cell_decoder
+x76 X1 X2 GND VDD GND net77 net78 unit_cell_decoder
+x77 X0 X1 GND VDD GND net79 net80 unit_cell_decoder
+x82 X0 X1 GND VDD GND net81 net82 unit_cell_decoder
+x83 X1 X2 GND VDD GND net83 net84 unit_cell_decoder
+x84 X2 X3 GND VDD GND net85 net86 unit_cell_decoder
+x85 X3 GND GND VDD GND net87 net88 unit_cell_decoder
+x90 X3 GND GND VDD GND net89 net90 unit_cell_decoder
+x91 X2 X3 GND VDD GND net91 net92 unit_cell_decoder
+x92 X1 X2 GND VDD GND net93 net94 unit_cell_decoder
+x93 X0 X1 GND VDD GND net95 net96 unit_cell_decoder
+x98 GND GND Y0 VDD GND net97 net98 unit_cell_decoder
+x99 GND GND Y1 VDD GND net99 net100 unit_cell_decoder
+x100 GND GND Y2 VDD GND net101 net102 unit_cell_decoder
+x101 GND GND Y3 VDD GND net103 net104 unit_cell_decoder
+x106 GND GND GND VDD GND net105 net106 unit_cell_decoder
+x108 GND GND GND VDD GND net107 net108 unit_cell_decoder
+x110 GND GND Y3 VDD GND net109 net110 unit_cell_decoder
+x111 GND GND Y2 VDD GND net111 net112 unit_cell_decoder
+x112 GND GND Y1 VDD GND net113 net114 unit_cell_decoder
+x113 GND GND Y0 VDD GND net115 net116 unit_cell_decoder
+x118 GND GND GND VDD GND net117 net118 unit_cell_decoder
+x120 GND GND GND VDD GND net119 net120 unit_cell_decoder
+x35 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x70 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x71 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x72 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x73 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x78 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x79 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x80 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x81 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x86 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x87 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x88 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x89 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x94 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x95 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x96 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x97 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x102 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x103 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x104 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x105 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x107 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x109 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x114 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x115 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x116 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x117 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+x119 I1 I2 Vcn Vbn GND GND dummy_current_steering_cell
+**.ends
+
+* expanding   symbol:  /home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym # of pins=7
+** sym_path: /home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sym
+** sch_path: /home/madvlsi/dev/git/magic-dds/xschem/unit_cell_decoder.sch
+.subckt unit_cell_decoder Vx Vx1 Hy VP VN Yb Y
+*.ipin Vx
+*.ipin Vx1
+*.ipin Hy
+*.iopin VP
+*.iopin VN
+*.opin Y
+*.opin Yb
+XM1 net1 Hy VP VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Yb Vx1 net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 VP Vx net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Yb Hy net2 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 Yb Vx1 VN GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 VN Vx net2 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 VP Yb Y VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 VN Yb Y GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym # of pins=7
+** sym_path: /home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sym
+** sch_path: /home/madvlsi/dev/git/magic-dds/xschem/current_steering_cell.sch
+.subckt current_steering_cell Iin Idump Dbar D Vcn Vbn VN
+*.iopin VN
+*.ipin D
+*.ipin Dbar
+*.ipin Vcn
+*.ipin Iin
+*.ipin Idump
+*.ipin Vbn
+XM1 Iin D net1 GND sky130_fd_pr__nfet_01v8 L=0.5 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Idump Dbar net1 GND sky130_fd_pr__nfet_01v8 L=0.5 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net2 Vbn VN GND sky130_fd_pr__nfet_01v8 L=0.5 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 Vcn net2 GND sky130_fd_pr__nfet_01v8 L=0.5 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym # of
+*+ pins=6
+** sym_path: /home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sym
+** sch_path: /home/madvlsi/dev/git/magic-dds/lvs/dummy_current_steering_cell.sch
+.subckt dummy_current_steering_cell Iin Idump Vcn Vbn VN VN2
+*.iopin VN2
+*.ipin Vcn
+*.ipin Iin
+*.ipin Idump
+*.ipin Vbn
+*.iopin VN
+XM1 Iin VN net1 GND sky130_fd_pr__nfet_01v8 L=0.5 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Idump VN net1 GND sky130_fd_pr__nfet_01v8 L=0.5 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net2 Vbn VN2 GND sky130_fd_pr__nfet_01v8 L=0.5 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 Vcn net2 GND sky130_fd_pr__nfet_01v8 L=0.5 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

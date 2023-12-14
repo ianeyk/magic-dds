@@ -141,26 +141,28 @@ value=".option wnflag=1
 }
 C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".save all
 .param P = 10n
-.param tstep = 0.01n
+*.param tstep = 0.01n
 *.param dur = 1u
 *.param period = 500n
 .control
 set wr_vecnames
 set wr_singlescale
 
-set period_max = 1/2e7
-set period = 1/2e5
+set period_max = 1/2e5
+set period = 1/2e7
+print period
 dowhile period <= period_max
   set duration = 2*$period
   set clk = $period/50
+  alterparam P=$clk
   set timestep = $clk/1000
   set tstep = $timestep
   set dur = $duration
   save all
   tran $tstep $dur
-  wrdata ~/dev/git/magic-dds/simulations/sc_bode/1/ieeeDAC_\{$&period\}.txt i(VIin) v(Vout)
+  wrdata ~/dev/git/magic-dds/simulations/sc_bode/1/ieeeDAC_\{$period\}.txt i(VIin) v(Vout)
   reset
-  let period = 10 * period
+  alter period = 10*$period
 end
 .endc"}
 C {madvlsi/capacitor.sym} 520 0 0 0 {name=C2
