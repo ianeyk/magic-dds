@@ -1,0 +1,26 @@
+* SPICE3 file created from 4_bit_binary_decoder.ext - technology: sky130A
+
+.subckt x2_bit_binary_decoder b0 b1 y1 y2 y3 VP VN
+X0 VP a_n60_n10# y1 VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X1 a_70_300# b0 a_n60_n10# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X2 y3 a_1010_n40# VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X3 a_1330_n10# b1 VN VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X4 VP a_620_n10# y2 VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X5 a_1010_n40# b0 a_1330_n10# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X6 VN b0 a_n60_n10# VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X7 a_n60_n10# b1 VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X8 y3 a_1010_n40# VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X9 VN a_n60_n10# y1 VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X10 VP b1 a_70_300# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X11 a_1010_n40# b0 VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X12 a_620_n10# b1 VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X13 a_620_n10# b1 VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X14 VP b1 a_1010_n40# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X15 VN a_620_n10# y2 VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+.ends
+
+**.subckt x4_bit_binary_decoder b0 b1 b2 b3 y1 y2 y3 x1 x2 x3
+X2_bit_binary_decoder_0 b0 b1 y1 y2 y3 2_bit_binary_decoder_1/VP VSUBS x2_bit_binary_decoder
+X2_bit_binary_decoder_1 b2 b3 x1 x2 x3 2_bit_binary_decoder_1/VP VSUBS x2_bit_binary_decoder
+**.ends
+

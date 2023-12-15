@@ -6,20 +6,22 @@ Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalen
 Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell binary_decoder_4bit_lvs in circuit ../lvs/lvs_decoder_with_ground.spice (0)(1 instance)
+Flattening unmatched subcell x2_bit_binary_decoder in circuit 4_bit_binary_decoder.spice (1)(2 instances)
 
-Class current_difference_same_size_2.spice (0):  Merged 30 parallel devices.
-Class current_difference_balanced.spice (1):  Merged 30 parallel devices.
 Subcircuit summary:
-Circuit 1: current_difference_same_size_2. |Circuit 2: current_difference_balanced.spi 
+Circuit 1: ../lvs/lvs_decoder_with_ground. |Circuit 2: 4_bit_binary_decoder.spice      
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (20->5)            |sky130_fd_pr__nfet_01v8 (20->5)            
-sky130_fd_pr__pfet_01v8 (20->5)            |sky130_fd_pr__pfet_01v8 (20->5)            
-Number of devices: 10                      |Number of devices: 10                      
-Number of nets: 11                         |Number of nets: 11                         
+sky130_fd_pr__nfet_01v8 (16)               |sky130_fd_pr__nfet_01v8 (16)               
+sky130_fd_pr__pfet_01v8 (16)               |sky130_fd_pr__pfet_01v8 (16)               
+Number of devices: 32                      |Number of devices: 32                      
+Number of nets: 22                         |Number of nets: 22                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 26 symmetries.
 Cells have no pins;  pin matching not needed.
-Device classes current_difference_same_size_2.spice and current_difference_balanced.spice are equivalent.
+Device classes ../lvs/lvs_decoder_with_ground.spice and 4_bit_binary_decoder.spice are equivalent.
 
 Final result: Circuits match uniquely.
 .
