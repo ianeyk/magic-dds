@@ -1,0 +1,33 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell half_dac_for_mirroring in circuit current_steering_dac.spice (0)(2 instances)
+Flattening unmatched subcell dummy_current_steering_dac_unit_cell_with_encoder in circuit current_steering_dac.spice (0)(28 instances)
+Flattening unmatched subcell current_steering_dac_unit_cell_with_encoder in circuit current_steering_dac.spice (0)(32 instances)
+Flattening unmatched subcell unit_cell_decoder in circuit current_steering_dac_xschem.spice (1)(60 instances)
+Flattening unmatched subcell current_steering_cell in circuit current_steering_dac_xschem.spice (1)(32 instances)
+Flattening unmatched subcell dummy_current_steering_cell in circuit current_steering_dac_xschem.spice (1)(28 instances)
+
+Class current_steering_dac.spice (0):  Merged 4 parallel devices.
+Class current_steering_dac_xschem.spice (1):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: current_steering_dac.spice      |Circuit 2: current_steering_dac_xschem.spi 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (480)              |sky130_fd_pr__nfet_01v8 (480)              
+sky130_fd_pr__pfet_01v8 (240->236)         |sky130_fd_pr__pfet_01v8 (240->236)         
+Number of devices: 716                     |Number of devices: 716                     
+Number of nets: 374                        |Number of nets: 374                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 401 symmetries.
+Cells have no pins;  pin matching not needed.
+Device classes current_steering_dac.spice and current_steering_dac_xschem.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

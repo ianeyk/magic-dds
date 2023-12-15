@@ -1,0 +1,27 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell x2_bit_binary_decoder in circuit 4_bit_binary_decoder.spice (0)(2 instances)
+Flattening unmatched subcell binary_decoder_4bit_lvs in circuit ../lvs/lvs_decoder_with_ground.spice (1)(1 instance)
+
+Subcircuit summary:
+Circuit 1: 4_bit_binary_decoder.spice      |Circuit 2: ../lvs/lvs_decoder_with_ground. 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (16)               |sky130_fd_pr__pfet_01v8 (16)               
+sky130_fd_pr__nfet_01v8 (16)               |sky130_fd_pr__nfet_01v8 (16)               
+Number of devices: 32                      |Number of devices: 32                      
+Number of nets: 22                         |Number of nets: 22                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 26 symmetries.
+Cells have no pins;  pin matching not needed.
+Device classes 4_bit_binary_decoder.spice and ../lvs/lvs_decoder_with_ground.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.
