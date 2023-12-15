@@ -1,0 +1,478 @@
+* SPICE3 file created from decoder_dac_current_difference.ext - technology: sky130A
+
+.subckt opamp_balanced V1 V2 Vout Vb Vcn Vcp Vbp VP VN
+X0 a_100_790# Vcp a_300_80# VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=4 ps=17 w=8 l=0.5
+X1 a_660_790# Vcp Vout VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=4 ps=17 w=8 l=0.5
+X2 a_420_5560# V1 a_100_790# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X3 a_100_790# Vcp a_300_80# VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=4 ps=17 w=8 l=0.5
+X4 a_300_80# Vcn a_100_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X5 a_420_5560# V2 a_660_790# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X6 a_420_5560# V1 a_100_790# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X7 a_420_5560# V2 a_660_790# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X8 Vout Vcp a_660_790# VP sky130_fd_pr__pfet_01v8 ad=4 pd=17 as=2 ps=8.5 w=8 l=0.5
+X9 a_300_80# Vcp a_100_790# VP sky130_fd_pr__pfet_01v8 ad=4 pd=17 as=2 ps=8.5 w=8 l=0.5
+X10 VN Vb a_420_5560# VN sky130_fd_pr__nfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X11 VP Vbp a_100_790# VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=2 ps=8.5 w=8 l=0.5
+X12 VN Vb a_420_5560# VN sky130_fd_pr__nfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X13 VN Vb a_420_5560# VN sky130_fd_pr__nfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X14 VP Vbp a_660_790# VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=2 ps=8.5 w=8 l=0.5
+X15 VP Vbp a_100_790# VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=2 ps=8.5 w=8 l=0.5
+X16 VN Vb a_420_5560# VN sky130_fd_pr__nfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X17 VP Vbp a_660_790# VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=2 ps=8.5 w=8 l=0.5
+X18 VN VN a_100_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X19 a_660_80# Vcn Vout VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X20 a_100_80# Vcn a_300_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X21 a_100_80# VN VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X22 a_100_790# VP VP VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=4 ps=17 w=8 l=0.5
+X23 VP VP a_100_790# VP sky130_fd_pr__pfet_01v8 ad=4 pd=17 as=2 ps=8.5 w=8 l=0.5
+X24 a_660_80# a_300_80# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X25 a_100_80# a_300_80# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X26 Vout Vcp a_660_790# VP sky130_fd_pr__pfet_01v8 ad=4 pd=17 as=2 ps=8.5 w=8 l=0.5
+X27 Vout Vcn a_660_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X28 a_660_80# a_300_80# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X29 a_300_80# Vcp a_100_790# VP sky130_fd_pr__pfet_01v8 ad=4 pd=17 as=2 ps=8.5 w=8 l=0.5
+X30 a_100_80# a_300_80# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X31 VN VN a_100_790# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X32 a_100_790# VN VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X33 a_660_790# V2 a_420_5560# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X34 a_100_790# V1 a_420_5560# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X35 a_660_790# V2 a_420_5560# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X36 a_100_80# Vcn a_300_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X37 a_100_790# V1 a_420_5560# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X38 a_300_80# Vcn a_100_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X39 VN VN a_420_5560# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=4 as=0.375 ps=2 w=1.5 l=0.5
+X40 VP VP a_100_790# VP sky130_fd_pr__pfet_01v8 ad=4 pd=17 as=2 ps=8.5 w=8 l=0.5
+X41 a_420_5560# VN VN VN sky130_fd_pr__nfet_01v8 ad=0.375 pd=2 as=0.75 ps=4 w=1.5 l=0.5
+X42 a_100_790# VP VP VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=4 ps=17 w=8 l=0.5
+X43 a_660_790# Vbp VP VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=2 ps=8.5 w=8 l=0.5
+X44 a_100_790# Vbp VP VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=2 ps=8.5 w=8 l=0.5
+X45 a_660_790# Vcp Vout VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=4 ps=17 w=8 l=0.5
+X46 a_420_5560# Vb VN VN sky130_fd_pr__nfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X47 a_420_5560# Vb VN VN sky130_fd_pr__nfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X48 a_660_790# Vbp VP VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=2 ps=8.5 w=8 l=0.5
+X49 a_420_5560# Vb VN VN sky130_fd_pr__nfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X50 a_100_790# Vbp VP VP sky130_fd_pr__pfet_01v8 ad=2 pd=8.5 as=2 ps=8.5 w=8 l=0.5
+X51 a_420_5560# Vb VN VN sky130_fd_pr__nfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X52 a_100_80# VN VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X53 Vout Vcn a_660_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X54 VN VN a_100_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X55 VN a_300_80# a_100_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X56 a_660_80# Vcn Vout VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X57 VN a_300_80# a_660_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X58 VN a_300_80# a_100_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X59 VN a_300_80# a_660_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+.ends
+
+.subckt x2_bit_binary_decoder b0 b1 y1 y2 y3 VP VN
+X0 VP a_n60_n10# y1 VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X1 a_70_300# b0 a_n60_n10# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X2 y3 a_1010_n40# VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X3 a_1330_n10# b1 VN VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X4 VP a_620_n10# y2 VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X5 a_1010_n40# b0 a_1330_n10# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X6 VN b0 a_n60_n10# VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X7 a_n60_n10# b1 VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X8 y3 a_1010_n40# VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X9 VN a_n60_n10# y1 VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X10 VP b1 a_70_300# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X11 a_1010_n40# b0 VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X12 a_620_n10# b1 VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X13 a_620_n10# b1 VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X14 VP b1 a_1010_n40# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X15 VN a_620_n10# y2 VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+.ends
+
+.subckt x4_bit_binary_decoder b0 b1 b2 b3 y1 y2 y3 x1 x2 x3 2_bit_binary_decoder_1/VP
++ VSUBS
+X2_bit_binary_decoder_0 b0 b1 y1 y2 y3 2_bit_binary_decoder_1/VP VSUBS x2_bit_binary_decoder
+X2_bit_binary_decoder_1 b2 b3 x1 x2 x3 2_bit_binary_decoder_1/VP VSUBS x2_bit_binary_decoder
+.ends
+
+.subckt dummy_current_steering_dac_unit_cell_with_encoder I1 I2 Vbn Vcn Vx Vx1 Vy
++ VP VN VN2
+X0 a_200_0# Vbn VN2 VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X1 a_870_2050# Vy VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X2 a_530_1630# Vy a_560_2180# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X3 VP Vx a_870_2050# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X4 a_400_0# Vcn a_200_0# VN sky130_fd_pr__nfet_01v8 ad=3.3 pd=12.7 as=3 ps=12.5 w=12 l=0.5
+X5 VP a_530_1630# a_560_1530# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X6 a_560_2180# Vx VN VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X7 a_870_2050# Vx1 a_530_1630# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X8 VN a_530_1630# a_560_1530# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X9 I1 VN a_400_0# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=2.2 ps=8.47 w=3 l=0.5
+X10 VN Vx1 a_530_1630# VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X11 I2 VN a_400_0# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=2.2 ps=8.47 w=3 l=0.5
+.ends
+
+.subckt current_steering_dac_unit_cell_with_encoder I1 I2 Vbn Vcn Vx Vx1 Vy VP VN
++ VN2
+X0 a_200_0# Vbn VN2 VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X1 a_870_2050# Vy VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X2 a_520_760# Vy a_560_2180# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X3 VP Vx a_870_2050# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X4 a_400_0# Vcn a_200_0# VN sky130_fd_pr__nfet_01v8 ad=2.2 pd=8.47 as=3 ps=12.5 w=12 l=0.5
+X5 VP a_520_760# a_520_n30# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X6 a_560_2180# Vx VN VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X7 a_870_2050# Vx1 a_520_760# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X8 VN a_520_760# a_520_n30# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X9 I1 a_520_n30# a_400_0# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=2.2 ps=8.47 w=3 l=0.5
+X10 VN Vx1 a_520_760# VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X11 I2 a_520_760# a_400_0# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=2.2 ps=8.47 w=3 l=0.5
+.ends
+
+.subckt half_dac_for_mirroring dummy_current_steering_dac_unit_cell_with_encoder_4/Vx1
++ current_steering_dac_unit_cell_with_encoder_6/VN2 dummy_current_steering_dac_unit_cell_with_encoder_1/Vx1
++ current_steering_dac_unit_cell_with_encoder_6/Vx1 current_steering_dac_unit_cell_with_encoder_8/Vbn
++ current_steering_dac_unit_cell_with_encoder_8/Vcn dummy_current_steering_dac_unit_cell_with_encoder_2/Vx1
++ current_steering_dac_unit_cell_with_encoder_9/VP current_steering_dac_unit_cell_with_encoder_8/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder_13/Vx1 current_steering_dac_unit_cell_with_encoder_19/Vbn
++ current_steering_dac_unit_cell_with_encoder_19/Vcn dummy_current_steering_dac_unit_cell_with_encoder_9/Vx1
++ current_steering_dac_unit_cell_with_encoder_6/I2 dummy_current_steering_dac_unit_cell_with_encoder_0/Vy
++ current_steering_dac_unit_cell_with_encoder_19/Vx current_steering_dac_unit_cell_with_encoder_6/I1
++ current_steering_dac_unit_cell_with_encoder_6/Vy current_steering_dac_unit_cell_with_encoder_19/VN2
++ current_steering_dac_unit_cell_with_encoder_9/Vbn current_steering_dac_unit_cell_with_encoder_9/Vcn
++ current_steering_dac_unit_cell_with_encoder_6/VP current_steering_dac_unit_cell_with_encoder_19/VP
++ dummy_current_steering_dac_unit_cell_with_encoder_9/VP dummy_current_steering_dac_unit_cell_with_encoder_3/Vx1
++ current_steering_dac_unit_cell_with_encoder_9/VN2 current_steering_dac_unit_cell_with_encoder_8/VP
++ dummy_current_steering_dac_unit_cell_with_encoder_9/Vbn dummy_current_steering_dac_unit_cell_with_encoder_9/I2
++ current_steering_dac_unit_cell_with_encoder_8/Vx dummy_current_steering_dac_unit_cell_with_encoder_9/Vcn
++ current_steering_dac_unit_cell_with_encoder_8/I2 dummy_current_steering_dac_unit_cell_with_encoder_9/I1
++ current_steering_dac_unit_cell_with_encoder_8/I1 current_steering_dac_unit_cell_with_encoder_19/I2
++ dummy_current_steering_dac_unit_cell_with_encoder_9/Vy current_steering_dac_unit_cell_with_encoder_2/Vy
++ dummy_current_steering_dac_unit_cell_with_encoder_9/VN2 current_steering_dac_unit_cell_with_encoder_9/I2
++ current_steering_dac_unit_cell_with_encoder_19/I1 current_steering_dac_unit_cell_with_encoder_9/Vx
++ current_steering_dac_unit_cell_with_encoder_16/Vy current_steering_dac_unit_cell_with_encoder_9/I1
++ current_steering_dac_unit_cell_with_encoder_6/Vcn current_steering_dac_unit_cell_with_encoder_9/Vy
++ VSUBS current_steering_dac_unit_cell_with_encoder_6/Vx current_steering_dac_unit_cell_with_encoder_6/Vbn
+Xdummy_current_steering_dac_unit_cell_with_encoder_0 current_steering_dac_unit_cell_with_encoder_19/I1
++ current_steering_dac_unit_cell_with_encoder_19/I2 current_steering_dac_unit_cell_with_encoder_19/Vbn
++ current_steering_dac_unit_cell_with_encoder_19/Vcn current_steering_dac_unit_cell_with_encoder_19/Vx
++ current_steering_dac_unit_cell_with_encoder_8/Vx dummy_current_steering_dac_unit_cell_with_encoder_0/Vy
++ current_steering_dac_unit_cell_with_encoder_19/VP VSUBS current_steering_dac_unit_cell_with_encoder_19/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_1 dummy_current_steering_dac_unit_cell_with_encoder_9/I1
++ dummy_current_steering_dac_unit_cell_with_encoder_9/I2 dummy_current_steering_dac_unit_cell_with_encoder_9/Vbn
++ dummy_current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx1
++ dummy_current_steering_dac_unit_cell_with_encoder_1/Vx1 current_steering_dac_unit_cell_with_encoder_16/Vy
++ dummy_current_steering_dac_unit_cell_with_encoder_9/VP VSUBS dummy_current_steering_dac_unit_cell_with_encoder_9/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_2 dummy_current_steering_dac_unit_cell_with_encoder_9/I1
++ dummy_current_steering_dac_unit_cell_with_encoder_9/I2 dummy_current_steering_dac_unit_cell_with_encoder_9/Vbn
++ dummy_current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx1
++ dummy_current_steering_dac_unit_cell_with_encoder_2/Vx1 current_steering_dac_unit_cell_with_encoder_9/Vy
++ dummy_current_steering_dac_unit_cell_with_encoder_9/VP VSUBS dummy_current_steering_dac_unit_cell_with_encoder_9/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_3 dummy_current_steering_dac_unit_cell_with_encoder_9/I1
++ dummy_current_steering_dac_unit_cell_with_encoder_9/I2 dummy_current_steering_dac_unit_cell_with_encoder_9/Vbn
++ dummy_current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx1
++ dummy_current_steering_dac_unit_cell_with_encoder_3/Vx1 current_steering_dac_unit_cell_with_encoder_6/Vy
++ dummy_current_steering_dac_unit_cell_with_encoder_9/VP VSUBS dummy_current_steering_dac_unit_cell_with_encoder_9/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_4 dummy_current_steering_dac_unit_cell_with_encoder_9/I1
++ dummy_current_steering_dac_unit_cell_with_encoder_9/I2 dummy_current_steering_dac_unit_cell_with_encoder_9/Vbn
++ dummy_current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx1
++ dummy_current_steering_dac_unit_cell_with_encoder_4/Vx1 current_steering_dac_unit_cell_with_encoder_2/Vy
++ dummy_current_steering_dac_unit_cell_with_encoder_9/VP VSUBS dummy_current_steering_dac_unit_cell_with_encoder_9/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_0 current_steering_dac_unit_cell_with_encoder_8/I1
++ current_steering_dac_unit_cell_with_encoder_8/I2 current_steering_dac_unit_cell_with_encoder_8/Vbn
++ current_steering_dac_unit_cell_with_encoder_8/Vcn current_steering_dac_unit_cell_with_encoder_8/Vx
++ current_steering_dac_unit_cell_with_encoder_9/Vx current_steering_dac_unit_cell_with_encoder_2/Vy
++ current_steering_dac_unit_cell_with_encoder_8/VP VSUBS current_steering_dac_unit_cell_with_encoder_8/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_1 current_steering_dac_unit_cell_with_encoder_9/I1
++ current_steering_dac_unit_cell_with_encoder_9/I2 current_steering_dac_unit_cell_with_encoder_9/Vbn
++ current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_9/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx current_steering_dac_unit_cell_with_encoder_2/Vy
++ current_steering_dac_unit_cell_with_encoder_9/VP VSUBS current_steering_dac_unit_cell_with_encoder_9/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_5 current_steering_dac_unit_cell_with_encoder_19/I1
++ current_steering_dac_unit_cell_with_encoder_19/I2 current_steering_dac_unit_cell_with_encoder_19/Vbn
++ current_steering_dac_unit_cell_with_encoder_19/Vcn current_steering_dac_unit_cell_with_encoder_19/Vx
++ current_steering_dac_unit_cell_with_encoder_8/Vx dummy_current_steering_dac_unit_cell_with_encoder_9/Vy
++ current_steering_dac_unit_cell_with_encoder_19/VP VSUBS current_steering_dac_unit_cell_with_encoder_19/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_2 current_steering_dac_unit_cell_with_encoder_6/I1
++ current_steering_dac_unit_cell_with_encoder_6/I2 current_steering_dac_unit_cell_with_encoder_6/Vbn
++ current_steering_dac_unit_cell_with_encoder_6/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx1 current_steering_dac_unit_cell_with_encoder_2/Vy
++ current_steering_dac_unit_cell_with_encoder_6/VP VSUBS current_steering_dac_unit_cell_with_encoder_6/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_6 current_steering_dac_unit_cell_with_encoder_8/I1
++ current_steering_dac_unit_cell_with_encoder_8/I2 current_steering_dac_unit_cell_with_encoder_8/Vbn
++ current_steering_dac_unit_cell_with_encoder_8/Vcn current_steering_dac_unit_cell_with_encoder_8/Vx
++ current_steering_dac_unit_cell_with_encoder_9/Vx dummy_current_steering_dac_unit_cell_with_encoder_9/Vy
++ current_steering_dac_unit_cell_with_encoder_8/VP VSUBS current_steering_dac_unit_cell_with_encoder_8/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_7 current_steering_dac_unit_cell_with_encoder_9/I1
++ current_steering_dac_unit_cell_with_encoder_9/I2 current_steering_dac_unit_cell_with_encoder_9/Vbn
++ current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_9/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx dummy_current_steering_dac_unit_cell_with_encoder_9/Vy
++ current_steering_dac_unit_cell_with_encoder_9/VP VSUBS current_steering_dac_unit_cell_with_encoder_9/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_10 current_steering_dac_unit_cell_with_encoder_6/I1
++ current_steering_dac_unit_cell_with_encoder_6/I2 current_steering_dac_unit_cell_with_encoder_6/Vbn
++ current_steering_dac_unit_cell_with_encoder_6/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx1 current_steering_dac_unit_cell_with_encoder_9/Vy
++ current_steering_dac_unit_cell_with_encoder_6/VP VSUBS current_steering_dac_unit_cell_with_encoder_6/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_4 current_steering_dac_unit_cell_with_encoder_8/I1
++ current_steering_dac_unit_cell_with_encoder_8/I2 current_steering_dac_unit_cell_with_encoder_8/Vbn
++ current_steering_dac_unit_cell_with_encoder_8/Vcn current_steering_dac_unit_cell_with_encoder_8/Vx
++ current_steering_dac_unit_cell_with_encoder_9/Vx current_steering_dac_unit_cell_with_encoder_6/Vy
++ current_steering_dac_unit_cell_with_encoder_8/VP VSUBS current_steering_dac_unit_cell_with_encoder_8/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_8 current_steering_dac_unit_cell_with_encoder_6/I1
++ current_steering_dac_unit_cell_with_encoder_6/I2 current_steering_dac_unit_cell_with_encoder_6/Vbn
++ current_steering_dac_unit_cell_with_encoder_6/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx1 dummy_current_steering_dac_unit_cell_with_encoder_9/Vy
++ current_steering_dac_unit_cell_with_encoder_6/VP VSUBS current_steering_dac_unit_cell_with_encoder_6/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_5 current_steering_dac_unit_cell_with_encoder_9/I1
++ current_steering_dac_unit_cell_with_encoder_9/I2 current_steering_dac_unit_cell_with_encoder_9/Vbn
++ current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_9/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx current_steering_dac_unit_cell_with_encoder_6/Vy
++ current_steering_dac_unit_cell_with_encoder_9/VP VSUBS current_steering_dac_unit_cell_with_encoder_9/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_9 dummy_current_steering_dac_unit_cell_with_encoder_9/I1
++ dummy_current_steering_dac_unit_cell_with_encoder_9/I2 dummy_current_steering_dac_unit_cell_with_encoder_9/Vbn
++ dummy_current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx1
++ dummy_current_steering_dac_unit_cell_with_encoder_9/Vx1 dummy_current_steering_dac_unit_cell_with_encoder_9/Vy
++ dummy_current_steering_dac_unit_cell_with_encoder_9/VP VSUBS dummy_current_steering_dac_unit_cell_with_encoder_9/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_13 current_steering_dac_unit_cell_with_encoder_9/I1
++ current_steering_dac_unit_cell_with_encoder_9/I2 current_steering_dac_unit_cell_with_encoder_9/Vbn
++ current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_9/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx current_steering_dac_unit_cell_with_encoder_16/Vy
++ current_steering_dac_unit_cell_with_encoder_9/VP VSUBS current_steering_dac_unit_cell_with_encoder_9/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_12 current_steering_dac_unit_cell_with_encoder_8/I1
++ current_steering_dac_unit_cell_with_encoder_8/I2 current_steering_dac_unit_cell_with_encoder_8/Vbn
++ current_steering_dac_unit_cell_with_encoder_8/Vcn current_steering_dac_unit_cell_with_encoder_8/Vx
++ current_steering_dac_unit_cell_with_encoder_9/Vx current_steering_dac_unit_cell_with_encoder_16/Vy
++ current_steering_dac_unit_cell_with_encoder_8/VP VSUBS current_steering_dac_unit_cell_with_encoder_8/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_6 current_steering_dac_unit_cell_with_encoder_6/I1
++ current_steering_dac_unit_cell_with_encoder_6/I2 current_steering_dac_unit_cell_with_encoder_6/Vbn
++ current_steering_dac_unit_cell_with_encoder_6/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx1 current_steering_dac_unit_cell_with_encoder_6/Vy
++ current_steering_dac_unit_cell_with_encoder_6/VP VSUBS current_steering_dac_unit_cell_with_encoder_6/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_14 current_steering_dac_unit_cell_with_encoder_6/I1
++ current_steering_dac_unit_cell_with_encoder_6/I2 current_steering_dac_unit_cell_with_encoder_6/Vbn
++ current_steering_dac_unit_cell_with_encoder_6/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx1 current_steering_dac_unit_cell_with_encoder_16/Vy
++ current_steering_dac_unit_cell_with_encoder_6/VP VSUBS current_steering_dac_unit_cell_with_encoder_6/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_9 current_steering_dac_unit_cell_with_encoder_9/I1
++ current_steering_dac_unit_cell_with_encoder_9/I2 current_steering_dac_unit_cell_with_encoder_9/Vbn
++ current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_9/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx current_steering_dac_unit_cell_with_encoder_9/Vy
++ current_steering_dac_unit_cell_with_encoder_9/VP VSUBS current_steering_dac_unit_cell_with_encoder_9/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_8 current_steering_dac_unit_cell_with_encoder_8/I1
++ current_steering_dac_unit_cell_with_encoder_8/I2 current_steering_dac_unit_cell_with_encoder_8/Vbn
++ current_steering_dac_unit_cell_with_encoder_8/Vcn current_steering_dac_unit_cell_with_encoder_8/Vx
++ current_steering_dac_unit_cell_with_encoder_9/Vx current_steering_dac_unit_cell_with_encoder_9/Vy
++ current_steering_dac_unit_cell_with_encoder_8/VP VSUBS current_steering_dac_unit_cell_with_encoder_8/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_16 current_steering_dac_unit_cell_with_encoder_19/I1
++ current_steering_dac_unit_cell_with_encoder_19/I2 current_steering_dac_unit_cell_with_encoder_19/Vbn
++ current_steering_dac_unit_cell_with_encoder_19/Vcn current_steering_dac_unit_cell_with_encoder_19/Vx
++ current_steering_dac_unit_cell_with_encoder_8/Vx current_steering_dac_unit_cell_with_encoder_16/Vy
++ current_steering_dac_unit_cell_with_encoder_19/VP VSUBS current_steering_dac_unit_cell_with_encoder_19/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_10 current_steering_dac_unit_cell_with_encoder_8/I1
++ current_steering_dac_unit_cell_with_encoder_8/I2 current_steering_dac_unit_cell_with_encoder_8/Vbn
++ current_steering_dac_unit_cell_with_encoder_8/Vcn current_steering_dac_unit_cell_with_encoder_8/Vx
++ current_steering_dac_unit_cell_with_encoder_9/Vx dummy_current_steering_dac_unit_cell_with_encoder_0/Vy
++ current_steering_dac_unit_cell_with_encoder_8/VP VSUBS current_steering_dac_unit_cell_with_encoder_8/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_17 current_steering_dac_unit_cell_with_encoder_19/I1
++ current_steering_dac_unit_cell_with_encoder_19/I2 current_steering_dac_unit_cell_with_encoder_19/Vbn
++ current_steering_dac_unit_cell_with_encoder_19/Vcn current_steering_dac_unit_cell_with_encoder_19/Vx
++ current_steering_dac_unit_cell_with_encoder_8/Vx current_steering_dac_unit_cell_with_encoder_9/Vy
++ current_steering_dac_unit_cell_with_encoder_19/VP VSUBS current_steering_dac_unit_cell_with_encoder_19/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_11 current_steering_dac_unit_cell_with_encoder_9/I1
++ current_steering_dac_unit_cell_with_encoder_9/I2 current_steering_dac_unit_cell_with_encoder_9/Vbn
++ current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_9/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx dummy_current_steering_dac_unit_cell_with_encoder_0/Vy
++ current_steering_dac_unit_cell_with_encoder_9/VP VSUBS current_steering_dac_unit_cell_with_encoder_9/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_18 current_steering_dac_unit_cell_with_encoder_19/I1
++ current_steering_dac_unit_cell_with_encoder_19/I2 current_steering_dac_unit_cell_with_encoder_19/Vbn
++ current_steering_dac_unit_cell_with_encoder_19/Vcn current_steering_dac_unit_cell_with_encoder_19/Vx
++ current_steering_dac_unit_cell_with_encoder_8/Vx current_steering_dac_unit_cell_with_encoder_6/Vy
++ current_steering_dac_unit_cell_with_encoder_19/VP VSUBS current_steering_dac_unit_cell_with_encoder_19/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_12 current_steering_dac_unit_cell_with_encoder_6/I1
++ current_steering_dac_unit_cell_with_encoder_6/I2 current_steering_dac_unit_cell_with_encoder_6/Vbn
++ current_steering_dac_unit_cell_with_encoder_6/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx
++ current_steering_dac_unit_cell_with_encoder_6/Vx1 dummy_current_steering_dac_unit_cell_with_encoder_0/Vy
++ current_steering_dac_unit_cell_with_encoder_6/VP VSUBS current_steering_dac_unit_cell_with_encoder_6/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+Xcurrent_steering_dac_unit_cell_with_encoder_19 current_steering_dac_unit_cell_with_encoder_19/I1
++ current_steering_dac_unit_cell_with_encoder_19/I2 current_steering_dac_unit_cell_with_encoder_19/Vbn
++ current_steering_dac_unit_cell_with_encoder_19/Vcn current_steering_dac_unit_cell_with_encoder_19/Vx
++ current_steering_dac_unit_cell_with_encoder_8/Vx current_steering_dac_unit_cell_with_encoder_2/Vy
++ current_steering_dac_unit_cell_with_encoder_19/VP VSUBS current_steering_dac_unit_cell_with_encoder_19/VN2
++ current_steering_dac_unit_cell_with_encoder
+Xdummy_current_steering_dac_unit_cell_with_encoder_13 dummy_current_steering_dac_unit_cell_with_encoder_9/I1
++ dummy_current_steering_dac_unit_cell_with_encoder_9/I2 dummy_current_steering_dac_unit_cell_with_encoder_9/Vbn
++ dummy_current_steering_dac_unit_cell_with_encoder_9/Vcn current_steering_dac_unit_cell_with_encoder_6/Vx1
++ dummy_current_steering_dac_unit_cell_with_encoder_13/Vx1 dummy_current_steering_dac_unit_cell_with_encoder_0/Vy
++ dummy_current_steering_dac_unit_cell_with_encoder_9/VP VSUBS dummy_current_steering_dac_unit_cell_with_encoder_9/VN2
++ dummy_current_steering_dac_unit_cell_with_encoder
+.ends
+
+.subckt current_steering_dac X0 X1 X2 X3 Y0 Y1 Y2 Y3 I1 I2 VDD Vbn Vcn GND
+Xhalf_dac_for_mirroring_1 GND GND GND GND Vbn Vcn GND VDD GND GND Vbn Vcn GND I2 GND
++ X0 I1 Y1 GND Vbn Vcn VDD VDD VDD GND GND VDD Vbn I2 X1 Vcn I2 I1 I1 I2 GND Y0 GND
++ I2 I1 X2 Y3 I1 Vcn Y2 GND X3 Vbn half_dac_for_mirroring
+Xhalf_dac_for_mirroring_0 GND GND GND GND Vbn Vcn GND VDD GND GND Vbn Vcn GND I2 GND
++ X0 I1 Y1 GND Vbn Vcn VDD VDD VDD GND GND VDD Vbn I2 X1 Vcn I2 I1 I1 I2 GND Y0 GND
++ I2 I1 X2 Y3 I1 Vcn Y2 GND X3 Vbn half_dac_for_mirroring
+.ends
+
+.subckt bias Vb Vcn Vcp Vbp VP VN
+X0 VP VP a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X1 VN Vb Vb VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X2 Vcn Vcn a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X3 a_100_n80# a_200_n110# a_200_n110# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X4 a_100_2540# a_200_2430# a_200_2430# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X5 VN Vb Vb VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X6 VN Vb Vcp VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=0.5
+X7 a_100_2540# a_200_2430# VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X8 a_100_2540# a_200_2430# a_200_2430# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X9 VN Vb Vcp VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X10 a_200_2430# a_200_2430# a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X11 Vcp Vcp a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X12 a_200_n110# a_200_n110# a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X13 VN VN a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X14 a_200_2430# a_200_2430# a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X15 VP a_200_2430# a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X16 a_200_2430# a_200_2430# a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X17 Vb Vbp VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X18 Vcp Vcp a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X19 a_200_2430# a_200_2430# a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X20 Vbp Vbp VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X21 a_200_n110# Vbp a_1140_1640# VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X22 VP VP a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X23 a_100_n80# a_200_n110# a_200_n110# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X24 VN Vb a_2260_820# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X25 Vcn Vcn a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X26 a_100_n80# a_200_n110# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X27 Vb Vbp VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X28 VP Vbp a_2260_1640# VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X29 Vbp VP VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X30 a_200_2430# Vb a_1140_820# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X31 a_100_n80# a_200_n110# a_200_n110# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X32 a_200_n110# a_200_n110# a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X33 a_100_n80# VN VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X34 a_100_n80# a_200_n110# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X35 VP Vbp Vcn VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X36 VP Vbp Vb VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X37 Vb VN VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X38 a_100_n80# Vcn Vcn VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X39 a_200_n110# a_200_n110# a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X40 a_100_2540# a_200_2430# a_200_2430# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X41 Vcn Vbp VP VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=0.5
+X42 VP Vbp Vcn VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=0.5
+X43 Vb Vb VN VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X44 Vcp Vb VN VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X45 a_100_n80# a_200_n110# a_200_n110# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X46 VP a_200_2430# a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X47 a_100_n80# a_200_n110# a_200_n110# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X48 a_200_2430# a_200_2430# a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X49 a_100_2540# VP VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X50 a_100_2540# a_200_2430# a_200_2430# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X51 Vb Vb VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X52 a_100_n80# Vcn Vcn VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X53 a_200_n110# a_200_n110# a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X54 a_100_2540# a_200_2430# a_200_2430# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X55 a_100_2540# a_200_2430# VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X56 VP Vbp Vbp VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X57 a_100_2540# Vcp Vcp VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X58 a_100_2540# Vcp Vcp VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X59 a_100_2540# a_200_2430# a_200_2430# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X60 VP Vbp Vb VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X61 Vbp Vbp VP VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X62 a_1140_1640# Vbp a_940_1640# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X63 a_100_n80# a_200_n110# a_200_n110# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X64 a_2260_1640# Vbp a_940_1640# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X65 VP Vbp Vbp VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X66 a_200_n110# a_200_n110# a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X67 a_2260_820# Vb a_940_820# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X68 VN a_200_n110# a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X69 VN VN a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X70 a_1140_820# Vb a_940_820# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X71 Vcn Vbp VP VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X72 a_200_n110# a_200_n110# a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X73 a_200_2430# a_200_2430# a_100_2540# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X74 Vcp Vb VN VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=0.5
+X75 VN a_200_n110# a_100_n80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+.ends
+
+.subckt current_difference_balanced I1 I2 Vout Vcn Vcp Vbp VP VN
+X0 I1 Vcp a_300_80# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X1 I2 Vcp Vout VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X2 I1 Vcp a_300_80# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X3 a_300_80# Vcn a_100_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X4 Vout Vcp I2 VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X5 a_300_80# Vcp I1 VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X6 VP Vbp I1 VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X7 VP Vbp I2 VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X8 VP Vbp I1 VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X9 VN VN a_100_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X10 VP Vbp I2 VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X11 a_660_80# Vcn Vout VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X12 a_100_80# Vcn a_300_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X13 a_100_80# VN VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X14 I1 VP VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X15 VP VP I1 VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X16 a_660_80# a_300_80# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X17 a_100_80# a_300_80# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X18 Vout Vcp I2 VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X19 Vout Vcn a_660_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X20 a_660_80# a_300_80# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X21 a_300_80# Vcp I1 VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X22 a_100_80# a_300_80# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X23 a_100_80# Vcn a_300_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X24 a_300_80# Vcn a_100_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X25 VP VP I1 VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X26 I2 Vcp Vout VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X27 I1 VP VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X28 I2 Vbp VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X29 I1 Vbp VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X30 I2 Vbp VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X31 I1 Vbp VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X32 a_100_80# VN VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X33 Vout Vcn a_660_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X34 VN VN a_100_80# VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X35 VN a_300_80# a_100_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X36 a_660_80# Vcn Vout VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X37 VN a_300_80# a_660_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X38 VN a_300_80# a_100_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X39 VN a_300_80# a_660_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+.ends
+
+
+* Top level circuit decoder_dac_current_difference
+
+Xopamp_balanced_0 opamp_balanced_0/V1 opamp_balanced_0/V2 opamp_balanced_0/Vout bias_0/Vb
++ bias_0/Vcn bias_0/Vcp bias_0/Vbp opamp_balanced_0/VP VSUBS opamp_balanced
+X4_bit_binary_decoder_0 4_bit_binary_decoder_0/b0 4_bit_binary_decoder_0/b1 4_bit_binary_decoder_0/b2
++ 4_bit_binary_decoder_0/b3 current_steering_dac_0/Y2 current_steering_dac_0/Y1 current_steering_dac_0/Y0
++ current_steering_dac_0/X1 current_steering_dac_0/X2 current_steering_dac_0/X3 bias_0/VP
++ VSUBS x4_bit_binary_decoder
+Xcurrent_steering_dac_0 bias_0/VP current_steering_dac_0/X1 current_steering_dac_0/X2
++ current_steering_dac_0/X3 current_steering_dac_0/Y0 current_steering_dac_0/Y1 current_steering_dac_0/Y2
++ bias_0/VP current_steering_dac_0/I1 current_steering_dac_0/I2 bias_0/VP bias_0/Vb
++ bias_0/Vcn VSUBS current_steering_dac
+Xbias_0 bias_0/Vb bias_0/Vcn bias_0/Vcp bias_0/Vbp bias_0/VP VSUBS bias
+Xcurrent_difference_balanced_0 current_steering_dac_0/I1 current_steering_dac_0/I2
++ opamp_balanced_0/V1 bias_0/Vcn bias_0/Vcp bias_0/Vbp current_difference_balanced_0/VP
++ VSUBS current_difference_balanced
+.end
+
