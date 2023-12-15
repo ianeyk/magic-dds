@@ -152,7 +152,7 @@ set period_max = 1/2e5
 set period = 1/2e7
 print period
 dowhile period <= period_max
-  set duration = 2*$period
+  set duration = 1/2*$period
   set clk = $period/50
   alterparam P=$clk
   set timestep = $clk/1000
