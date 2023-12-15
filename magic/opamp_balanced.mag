@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1702613643
+timestamp 1702677968
 << nwell >>
 rect -70 375 1340 2160
 << nmos >>
@@ -1297,7 +1297,8 @@ rect 515 220 525 235
 rect 545 235 725 240
 rect 545 220 555 235
 rect 235 210 275 220
-rect 235 190 245 210
+rect 235 195 245 210
+rect -70 190 245 195
 rect 265 195 275 210
 rect 435 210 475 220
 rect 515 210 555 220
@@ -1315,9 +1316,8 @@ rect 825 195 835 210
 rect 995 210 1035 220
 rect 995 195 1005 210
 rect 825 190 1005 195
-rect 1025 195 1035 210
-rect 1025 190 1410 195
-rect 235 180 1410 190
+rect 1025 190 1035 210
+rect -70 180 1035 190
 rect 5 15 45 25
 rect 5 -5 15 15
 rect 35 -5 45 15
@@ -1338,8 +1338,6 @@ rect 1145 -355 1170 -85
 rect 1305 -355 1320 -85
 rect -50 -370 1320 -355
 << labels >>
-flabel metal1 1410 190 1410 190 3 FreeSans 160 0 0 0 Vout
-port 3 e
 flabel locali -50 -45 -50 -45 7 FreeSans 160 0 0 0 Vcn
 port 5 w
 flabel metal1 -50 -220 -50 -220 7 FreeSans 160 0 0 0 VN
@@ -1356,4 +1354,6 @@ flabel locali -50 2195 -50 2195 7 FreeSans 160 0 0 0 Vbp
 port 7 w
 flabel locali -50 3015 -50 3015 7 FreeSans 160 0 0 0 Vb
 port 4 w
+flabel metal1 -70 190 -70 190 7 FreeSans 160 0 0 0 Vout
+port 3 w
 << end >>
