@@ -1,0 +1,52 @@
+magic
+tech sky130A
+timestamp 1702624819
+<< nwell >>
+rect 945 150 1075 290
+<< locali >>
+rect 160 445 180 465
+rect 430 425 470 465
+rect 1105 445 1125 465
+rect 1375 425 1415 465
+rect 0 0 20 15
+rect 340 0 360 20
+rect 550 0 570 20
+rect 680 0 700 20
+rect 945 0 965 15
+rect 1285 0 1305 20
+rect 1495 0 1515 20
+rect 1625 0 1645 20
+use 2_bit_binary_decoder  2_bit_binary_decoder_0
+timestamp 1702624459
+transform 1 0 145 0 1 20
+box -145 -20 800 445
+use 2_bit_binary_decoder  2_bit_binary_decoder_1
+timestamp 1702624459
+transform 1 0 1090 0 1 20
+box -145 -20 800 445
+<< labels >>
+flabel locali 170 465 170 465 1 FreeSans 240 0 0 0 b0
+port 1 n
+flabel locali 450 465 450 465 1 FreeSans 240 0 0 0 b1
+port 2 n
+flabel locali 1115 465 1115 465 1 FreeSans 240 0 0 0 b2
+port 3 n
+flabel locali 1395 465 1395 465 1 FreeSans 240 0 0 0 b3
+port 4 n
+flabel locali 350 0 350 0 5 FreeSans 240 0 0 0 y1
+port 5 s
+flabel locali 560 0 560 0 5 FreeSans 240 0 0 0 y2
+port 6 s
+flabel locali 690 0 690 0 5 FreeSans 240 0 0 0 y3
+port 7 s
+flabel locali 1295 0 1295 0 5 FreeSans 240 0 0 0 x1
+port 8 s
+flabel locali 1505 0 1505 0 5 FreeSans 240 0 0 0 x2
+port 9 s
+flabel locali 1635 0 1635 0 5 FreeSans 240 0 0 0 x3
+port 10 s
+flabel space 0 220 0 220 7 FreeSans 240 0 0 0 VP
+port 11 w
+flabel space 0 65 0 65 7 FreeSans 240 0 0 0 VN
+port 12 w
+<< end >>
