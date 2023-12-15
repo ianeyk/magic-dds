@@ -120,25 +120,25 @@ lab=#net2}
 N 1460 -360 1460 -350 {
 lab=#net2}
 N 1190 -430 1190 -420 {
-lab=V1}
+lab=I1}
 N 1190 -430 1460 -430 {
-lab=V1}
+lab=I1}
 N 1460 -430 1460 -420 {
-lab=V1}
+lab=I1}
 N 1280 -430 1280 -420 {
-lab=V1}
+lab=I1}
 N 1370 -430 1370 -420 {
-lab=V1}
+lab=I1}
 N 1280 -360 1280 -350 {
 lab=#net2}
 N 1370 -360 1370 -350 {
 lab=#net2}
 N 1190 -490 1190 -480 {
-lab=V1}
+lab=I1}
 N 1190 -480 1460 -480 {
-lab=V1}
+lab=I1}
 N 1460 -490 1460 -480 {
-lab=V1}
+lab=I1}
 N 1190 -560 1190 -550 {
 lab=VDD}
 N 1190 -560 1460 -560 {
@@ -146,9 +146,9 @@ lab=VDD}
 N 1460 -560 1460 -550 {
 lab=VDD}
 N 1280 -490 1280 -480 {
-lab=V1}
+lab=I1}
 N 1370 -490 1370 -480 {
-lab=V1}
+lab=I1}
 N 1280 -560 1280 -550 {
 lab=VDD}
 N 1370 -560 1370 -550 {
@@ -226,7 +226,7 @@ lab=Vcp}
 N 1140 -390 1160 -390 {
 lab=Vcp}
 N 1190 -480 1190 -430 {
-lab=V1}
+lab=I1}
 N 1190 -350 1190 -260 {
 lab=#net2}
 N 1190 -180 1190 -130 {
@@ -250,11 +250,11 @@ lab=#net2}
 N 1060 -300 1190 -300 {
 lab=#net2}
 N 910 -490 910 -480 {
-lab=V1}
+lab=I1}
 N 910 -480 1190 -480 {
-lab=V1}
+lab=I1}
 N 1010 -490 1010 -480 {
-lab=V1}
+lab=I1}
 N 910 -560 910 -550 {
 lab=VDD}
 N 910 -560 1190 -560 {
@@ -276,9 +276,9 @@ lab=VDD}
 N 1010 -360 1010 -350 {
 lab=VDD}
 N 910 -430 910 -420 {
-lab=V1}
+lab=I1}
 N 1010 -430 1010 -420 {
-lab=V1}
+lab=I1}
 N 970 -390 980 -390 {
 lab=VDD}
 N 870 -390 880 -390 {
@@ -288,13 +288,13 @@ lab=GND}
 N 880 -220 890 -220 {
 lab=GND}
 N 910 -430 1010 -430 {
-lab=V1}
+lab=I1}
 N 870 -520 870 -430 {
 lab=VDD}
 N 1010 -190 1010 -180 {
 lab=#net1}
 N 1010 -430 1190 -430 {
-lab=V1}
+lab=I1}
 N 920 -260 920 -250 {
 lab=GND}
 N 1010 -260 1010 -250 {
@@ -335,7 +335,8 @@ N 920 -130 920 -120 {
 lab=#net1}
 N 1010 -130 1010 -120 {
 lab=#net1}
-N 880 -50 1190 -50 {}
+N 880 -50 1190 -50 {
+lab=GND}
 C {madvlsi/nmos3.sym} 1190 -220 0 0 {name=M7a
 L=0.5
 W=3
@@ -578,7 +579,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1190 -390 0 0 {name=M5a
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -593,7 +594,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1280 -390 0 0 {name=M5b
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -608,7 +609,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1370 -390 0 0 {name=M5c
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -623,7 +624,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1460 -390 0 0 {name=M5d
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -638,7 +639,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1590 -390 0 0 {name=M6a
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -653,7 +654,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1680 -390 0 0 {name=M6b
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -668,7 +669,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1770 -390 0 0 {name=M6c
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -683,7 +684,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1860 -390 0 0 {name=M6d
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -698,7 +699,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1190 -520 0 0 {name=M3a
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -713,7 +714,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1280 -520 0 0 {name=M3b
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -728,7 +729,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1370 -520 0 0 {name=M3c
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -743,7 +744,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1460 -520 0 0 {name=M3d
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -758,7 +759,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1590 -520 0 0 {name=M4a
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -773,7 +774,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1680 -520 0 0 {name=M4b
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -788,7 +789,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1770 -520 0 0 {name=M4c
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -803,7 +804,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1860 -520 0 0 {name=M4d
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -817,19 +818,21 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/ipin.sym} 1140 -520 0 0 {name=p1 lab=Vbp
-W=8}
+W=3}
 C {devices/ipin.sym} 1140 -390 0 0 {name=p2 lab=Vcp
-W=8}
+W=3}
 C {devices/ipin.sym} 1140 -220 0 0 {name=p3 lab=Vcn}
-C {devices/ipin.sym} 1860 -460 2 0 {name=p4 lab=I2}
-C {devices/ipin.sym} 1190 -460 0 0 {name=p5 lab=I1}
+C {devices/ipin.sym} 1860 -460 2 0 {name=p4 lab=I2
+W=3}
+C {devices/ipin.sym} 1190 -460 0 0 {name=p5 lab=I1
+W=3}
 C {devices/opin.sym} 1860 -300 0 0 {name=p9 lab=Vout}
 C {madvlsi/vdd.sym} 1530 -560 0 0 {name=l1 lab=VDD
-W=8}
+W=3}
 C {madvlsi/gnd.sym} 1530 -50 0 0 {name=l2 lab=GND}
 C {madvlsi/pmos3.sym} 1010 -520 0 0 {name=Md3b
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -844,7 +847,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 910 -520 0 0 {name=Md3a
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -859,7 +862,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1010 -390 0 0 {name=Md5b
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
@@ -874,7 +877,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 910 -390 0 0 {name=Md5a
 L=0.5
-W=8
+W=3
 body=VDD
 nf=1
 mult=1
