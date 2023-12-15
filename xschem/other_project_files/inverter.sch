@@ -41,7 +41,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos4.sym} 140 -190 0 0 {name=M2
 L=0.15
-W=4
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
