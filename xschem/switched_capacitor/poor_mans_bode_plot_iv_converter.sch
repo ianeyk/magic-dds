@@ -151,7 +151,7 @@ set wr_singlescale
 set period_max = 1/2e5
 set period = 1/2e7
 print period
-dowhile period <= period_max
+foreach period 0.5e-7 0.5e-6 0.5e-5 0.5e-4
   set duration = 1/2*$period
   set clk = $period/50
   alterparam P=$clk
@@ -162,7 +162,6 @@ dowhile period <= period_max
   tran $tstep $dur
   wrdata ~/dev/git/magic-dds/simulations/sc_bode/1/ieeeDAC_\{$period\}.txt i(VIin) v(Vout)
   reset
-  alter period = 10*$period
 end
 .endc"}
 C {madvlsi/capacitor.sym} 520 0 0 0 {name=C2
