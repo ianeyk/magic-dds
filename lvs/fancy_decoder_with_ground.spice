@@ -1,0 +1,105 @@
+** sch_path: /home/madvlsi/dev/git/magic-dds/xschem/fancy_decoder_with_ground.sch
+**.subckt fancy_decoder_with_ground
+x1 net1 net2 VDD net3 net4 net5 net6 net7 net8 GND net9 net10 binary_decoder_4bit_fancy_lvs
+**.ends
+
+* expanding   symbol:  /home/madvlsi/dev/git/magic-dds/xschem/binary_decoder_4bit_fancy_lvs.sym # of
+*+ pins=12
+** sym_path: /home/madvlsi/dev/git/magic-dds/xschem/binary_decoder_4bit_fancy_lvs.sym
+** sch_path: /home/madvlsi/dev/git/magic-dds/xschem/binary_decoder_4bit_fancy_lvs.sch
+.subckt binary_decoder_4bit_fancy_lvs x1 y1 VP b0 b1 x2 y2 b2 b3 VN y3 x3
+*.ipin b0
+*.ipin b1
+*.ipin b2
+*.ipin b3
+*.opin x1
+*.opin x2
+*.opin x3
+*.opin y1
+*.opin y2
+*.opin y3
+*.iopin VP
+*.iopin VN
+x1 VN b0 b1 net3 VP nor
+x2 VP net3 y1 VN inverter
+x3 VN b2 b3 net4 VP nor
+x4 VP net4 x1 VN inverter
+x5 VN b0 b1 net5 VP nand
+x6 VN b2 b3 net6 VP nand
+x7 VP net5 y3 VN inverter
+x8 VP net6 x3 VN inverter
+x13 VP b1 net1 VN inverter
+x14 VP net1 y2 VN inverter
+x15 VP b3 net2 VN inverter
+x16 VP net2 x2 VN inverter
+.ends
+
+
+* expanding   symbol:  /home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nor.sym # of pins=5
+** sym_path: /home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nor.sym
+** sch_path: /home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nor.sch
+.subckt nor VN A B Y VP
+*.iopin VP
+*.iopin VN
+*.ipin A
+*.ipin B
+*.opin Y
+XM1 Y A VN GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y B VN GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y A net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 B VP VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/madvlsi/dev/git/magic-dds/xschem/other_project_files/inverter.sym # of
+*+ pins=4
+** sym_path: /home/madvlsi/dev/git/magic-dds/xschem/other_project_files/inverter.sym
+** sch_path: /home/madvlsi/dev/git/magic-dds/xschem/other_project_files/inverter.sch
+.subckt inverter VP A Y VN
+*.iopin VP
+*.iopin VN
+*.ipin A
+*.opin Y
+XM1 Y A VN VN sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A VP VP sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand.sym # of pins=5
+** sym_path: /home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand.sym
+** sch_path: /home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand.sch
+.subckt nand VN A B Y VP
+*.iopin VP
+*.iopin VN
+*.ipin A
+*.ipin B
+*.opin Y
+XM1 Y A net1 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 B VN GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y A VP VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Y B VP VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end
