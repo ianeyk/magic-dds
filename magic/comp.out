@@ -7,10 +7,10 @@ Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
-Class current_difference_balanced_xschem.spice (0):  Merged 30 parallel devices.
+Class current_difference_same_size_2.spice (0):  Merged 30 parallel devices.
 Class current_difference_balanced.spice (1):  Merged 30 parallel devices.
 Subcircuit summary:
-Circuit 1: current_difference_balanced_xsc |Circuit 2: current_difference_balanced.spi 
+Circuit 1: current_difference_same_size_2. |Circuit 2: current_difference_balanced.spi 
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__nfet_01v8 (20->5)            |sky130_fd_pr__nfet_01v8 (20->5)            
 sky130_fd_pr__pfet_01v8 (20->5)            |sky130_fd_pr__pfet_01v8 (20->5)            
@@ -19,7 +19,7 @@ Number of nets: 11                         |Number of nets: 11
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
-Device classes current_difference_balanced_xschem.spice and current_difference_balanced.spice are equivalent.
+Device classes current_difference_same_size_2.spice and current_difference_balanced.spice are equivalent.
 
 Final result: Circuits match uniquely.
 .
