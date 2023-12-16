@@ -207,7 +207,7 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=64n
+C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=4n
 .save all
 .control
 save all
@@ -269,7 +269,7 @@ C {madvlsi/gnd.sym} -300 -270 0 0 {name=l18 lab=GND}
 C {devices/lab_pin.sym} -300 -330 1 0 {name=p8 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 140 330 0 0 {name=p11 sig_type=std_logic lab=Vref}
 C {madvlsi/isource.sym} -350 520 0 0 {name=I2
-value=0.5u}
+value=1m}
 C {madvlsi/gnd.sym} -350 550 0 0 {name=l19 lab=GND}
 C {devices/lab_pin.sym} -80 -30 1 0 {name=p7 sig_type=std_logic lab=Vin}
 C {madvlsi/ammeter1.sym} -1120 -30 1 0 {name=VIin}
