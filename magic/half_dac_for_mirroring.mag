@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1702595941
+timestamp 1702704436
 << error_s >>
 rect -236 5740 -235 5746
 rect 414 5740 415 5746
@@ -31,67 +31,67 @@ rect 1070 -841 1076 -840
 rect 1720 -841 1726 -840
 rect 2370 -841 2376 -840
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_0
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 0 0 1 15
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_1
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 650 0 1 15
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_2
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 1300 0 1 15
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_4
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 0 0 1 1330
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_5
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 650 0 1 1330
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_6
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 1300 0 1 1330
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_8
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 0 0 1 2645
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_9
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 650 0 1 2645
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_10
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 1300 0 1 2645
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_12
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 0 0 1 3960
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_13
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 650 0 1 3960
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_14
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 1300 0 1 3960
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_16
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 -650 0 1 3960
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_17
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 -650 0 1 2645
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_18
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 -650 0 1 1330
 box 0 -15 650 1300
 use current_steering_dac_unit_cell_with_encoder  current_steering_dac_unit_cell_with_encoder_19
-timestamp 1702593820
+timestamp 1702704436
 transform 1 0 -650 0 1 15
 box 0 -15 650 1300
 use dummy_current_steering_dac_unit_cell_with_encoder  dummy_current_steering_dac_unit_cell_with_encoder_0 ~/dev/git/magic-dds/magic

@@ -12,9 +12,9 @@ lab=q_bar}
 N 490 -640 490 -630 {
 lab=q_bar}
 N 460 -670 460 -560 {
-lab=#net1}
+lab=net4}
 N 410 -670 460 -670 {
-lab=#net1}
+lab=net4}
 N 410 -460 460 -460 {
 lab=q}
 N 410 -350 460 -350 {
@@ -44,19 +44,19 @@ lab=vn}
 N 390 -380 390 -280 {
 lab=clk}
 N 290 -460 350 -460 {
-lab=#net2}
+lab=net2}
 N 290 -350 350 -350 {
-lab=#net3}
+lab=net3}
 N 230 -460 230 -350 {
-lab=#net4}
+lab=net1}
 N 170 -350 230 -350 {
-lab=#net4}
+lab=net1}
 N 170 -670 230 -670 {
-lab=#net2}
+lab=net2}
 N 300 -460 300 -380 {
-lab=#net2}
+lab=net2}
 N 260 -380 300 -380 {
-lab=#net2}
+lab=net2}
 N 140 -380 150 -380 {
 lab=clk}
 N 150 -380 150 -290 {
@@ -86,25 +86,25 @@ lab=q}
 N 460 -380 490 -380 {
 lab=q}
 N 300 -530 300 -460 {
-lab=#net2}
+lab=net2}
 N 220 -530 260 -530 {
-lab=#net2}
+lab=net2}
 N 220 -670 220 -530 {
-lab=#net2}
+lab=net2}
 N 290 -670 290 -560 {
 lab=vp}
 N 210 -560 210 -490 {
-lab=#net3}
+lab=net3}
 N 210 -490 260 -490 {
-lab=#net3}
+lab=net3}
 N 260 -490 320 -490 {
-lab=#net3}
+lab=net3}
 N 320 -490 320 -350 {
-lab=#net3}
+lab=net3}
 N 210 -640 210 -560 {
-lab=#net3}
+lab=net3}
 N 210 -640 260 -640 {
-lab=#net3}
+lab=net3}
 N 530 -670 550 -670 {
 lab=q}
 N 520 -560 550 -560 {
@@ -178,7 +178,7 @@ lab=clk}
 N 150 -530 150 -460 {
 lab=clk}
 N 170 -430 170 -350 {
-lab=#net4}
+lab=net1}
 N 110 -430 110 -350 {
 lab=vn}
 N 110 -430 110 -420 {
@@ -198,15 +198,15 @@ lab=clk}
 N 380 -530 390 -530 {
 lab=clk}
 N 410 -670 410 -560 {
-lab=#net1}
+lab=net4}
 N 290 -680 290 -670 {
 lab=vp}
 N 260 -530 300 -530 {
-lab=#net2}
+lab=net2}
 N 170 -560 210 -560 {
-lab=#net3}
+lab=net3}
 N 210 -560 230 -560 {
-lab=#net3}
+lab=net3}
 C {madvlsi/pmos4.sym} 260 -560 3 0 {name=M8
 L=0.15
 W=1
@@ -440,3 +440,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
+C {devices/lab_pin.sym} 230 -380 0 0 {name=p3 sig_type=std_logic lab=net1}
+C {devices/lab_pin.sym} 300 -520 0 0 {name=p9 sig_type=std_logic lab=net2}
+C {devices/lab_pin.sym} 210 -510 0 0 {name=p10 sig_type=std_logic lab=net3}
+C {devices/lab_pin.sym} 460 -630 0 0 {name=p11 sig_type=std_logic lab=net4}

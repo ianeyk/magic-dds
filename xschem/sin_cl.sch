@@ -474,25 +474,44 @@ N 70 3690 100 3690 {
 lab=#net29}
 N 100 3380 100 3690 {
 lab=#net29}
-N 70 4230 150 4230 {}
-N 70 4210 150 4210 {}
-N 70 4050 70 4210 {}
-N 90 4190 150 4190 {}
-N 90 3870 90 4190 {}
-N 70 3870 90 3870 {}
-N 70 4250 150 4250 {}
-N 70 4250 70 4410 {}
-N 90 4270 150 4270 {}
-N 90 4270 90 4580 {}
-N 80 4580 90 4580 {}
-N 320 2460 320 3320 {}
-N 320 2460 350 2460 {}
-N 350 2390 350 2460 {}
-N 320 3360 320 4170 {}
-N 320 4170 330 4170 {}
-N 330 4170 330 4230 {}
-N 410 3340 440 3340 {}
-N 440 450 440 3340 {}
+N 70 4230 150 4230 {
+lab=#net30}
+N 70 4210 150 4210 {
+lab=#net31}
+N 70 4050 70 4210 {
+lab=#net31}
+N 90 4190 150 4190 {
+lab=#net32}
+N 90 3870 90 4190 {
+lab=#net32}
+N 70 3870 90 3870 {
+lab=#net32}
+N 70 4250 150 4250 {
+lab=#net33}
+N 70 4250 70 4410 {
+lab=#net33}
+N 90 4270 150 4270 {
+lab=#net34}
+N 90 4270 90 4580 {
+lab=#net34}
+N 80 4580 90 4580 {
+lab=#net34}
+N 320 2460 320 3320 {
+lab=#net35}
+N 320 2460 350 2460 {
+lab=#net35}
+N 350 2390 350 2460 {
+lab=#net35}
+N 320 3360 320 4170 {
+lab=#net36}
+N 320 4170 330 4170 {
+lab=#net36}
+N 330 4170 330 4230 {
+lab=#net36}
+N 410 3340 440 3340 {
+lab=#net37}
+N 440 450 440 3340 {
+lab=#net37}
 N 860 390 930 390 {
 lab=_b0}
 N 860 310 860 390 {
@@ -502,38 +521,99 @@ lab=b0}
 N 870 300 870 380 {
 lab=b0}
 N 880 420 930 420 {
-lab=#net8}
+lab=#net38}
 N 810 410 930 410 {
-lab=#net9}
+lab=#net37}
 N 810 410 810 420 {
-lab=#net9}
+lab=#net37}
 N 870 250 870 300 {
 lab=b0}
 N 860 260 860 310 {
 lab=_b0}
-N 440 420 810 420 {}
-N 440 420 440 450 {}
-C {devices/ipin.sym} 0 0 0 0 {name=p1 lab=b0}
+N 440 420 810 420 {
+lab=#net37}
+N 440 420 440 450 {
+lab=#net37}
+N -460 0 -400 0 {
+lab=_b6}
+N -400 0 -400 60 {
+lab=_b6}
+N -370 -30 -370 60 {
+lab=b6}
+N -460 -30 -370 -30 {
+lab=b6}
+N -460 -60 -340 -60 {
+lab=_b5}
+N -340 -60 -340 50 {
+lab=_b5}
+N -340 50 -340 60 {
+lab=_b5}
+N -310 -90 -310 60 {
+lab=b5}
+N -460 -90 -310 -90 {
+lab=b5}
+N -460 -120 -290 -120 {
+lab=_b4}
+N -280 -120 -280 60 {
+lab=_b4}
+N -250 -150 -250 60 {
+lab=b4}
+N -460 -150 -250 -150 {
+lab=b4}
+N -290 -120 -280 -120 {
+lab=_b4}
+N -220 -170 -220 60 {
+lab=_b3}
+N -220 -180 -220 -170 {
+lab=_b3}
+N -460 -180 -220 -180 {
+lab=_b3}
+N -190 -210 -190 60 {
+lab=b3}
+N -460 -210 -190 -210 {
+lab=b3}
+N -160 -240 -160 60 {
+lab=_b2}
+N -460 -240 -160 -240 {
+lab=_b2}
+N -460 -270 -130 -270 {
+lab=b2}
+N -130 -270 -130 60 {
+lab=b2}
+N -100 -300 -100 60 {
+lab=_b1}
+N -460 -300 -100 -300 {
+lab=_b1}
+N -460 -330 -70 -330 {
+lab=b1}
+N -70 -330 -70 60 {
+lab=b1}
+N 1080 400 1100 400 {
+lab=d3}
+N 1080 270 1100 270 {
+lab=d2}
+N 1080 140 1100 140 {
+lab=d1}
 C {devices/ipin.sym} 0 30 0 0 {name=p2 lab=_b0}
-C {devices/ipin.sym} -70 60 1 0 {name=p1 lab=b1}
-C {devices/ipin.sym} -100 60 1 0 {name=p2 lab=_b1}
-C {devices/ipin.sym} -130 60 1 0 {name=p1 lab=b2}
-C {devices/ipin.sym} -160 60 1 0 {name=p2 lab=_b2}
-C {devices/ipin.sym} -190 60 1 0 {name=p1 lab=b3}
-C {devices/ipin.sym} -220 60 1 0 {name=p2 lab=_b3}
-C {devices/ipin.sym} -250 60 1 0 {name=p1 lab=b4}
-C {devices/ipin.sym} -280 60 1 0 {name=p2 lab=_b4}
-C {devices/ipin.sym} -310 60 1 0 {name=p1 lab=b5}
-C {devices/ipin.sym} -340 60 1 0 {name=p2 lab=_b5}
-C {devices/ipin.sym} -370 60 1 0 {name=p1 lab=b6}
-C {devices/ipin.sym} -400 60 1 0 {name=p2 lab=_b6}
-C {devices/ipin.sym} -430 60 1 0 {name=p1 lab=b7}
-C {devices/ipin.sym} -460 60 1 0 {name=p2 lab=_b7}
+C {devices/ipin.sym} -460 -330 0 0 {name=p1 lab=b1}
+C {devices/ipin.sym} -460 -300 0 0 {name=p2 lab=_b1}
+C {devices/ipin.sym} -460 -270 0 0 {name=p1 lab=b2}
+C {devices/ipin.sym} -460 -240 0 0 {name=p2 lab=_b2}
+C {devices/ipin.sym} -460 -210 0 0 {name=p1 lab=b3}
+C {devices/ipin.sym} -460 -180 0 0 {name=p2 lab=_b3}
+C {devices/ipin.sym} -460 -150 0 0 {name=p1 lab=b4}
+C {devices/ipin.sym} -460 -120 0 0 {name=p2 lab=_b4}
+C {devices/ipin.sym} -460 -90 0 0 {name=p1 lab=b5}
+C {devices/ipin.sym} -460 -60 0 0 {name=p2 lab=_b5}
+C {devices/ipin.sym} -460 -30 0 0 {name=p1 lab=b6}
+C {devices/ipin.sym} -460 0 0 0 {name=p2 lab=_b6}
+C {devices/ipin.sym} -460 30 0 0 {name=p1 lab=b7}
+C {devices/ipin.sym} -460 60 0 0 {name=p2 lab=_b7}
 C {devices/ipin.sym} 0 0 0 0 {name=p3 lab=b0}
 C {devices/opin.sym} 1080 0 0 0 {name=p4 lab=d0}
-C {devices/opin.sym} 1080 140 0 0 {name=p5 lab=d1}
-C {devices/opin.sym} 1080 270 0 0 {name=p6 lab=d2}
-C {devices/opin.sym} 1080 400 0 0 {name=p7 lab=d3}
+C {devices/opin.sym} 1100 140 0 0 {name=p5 lab=d1}
+C {devices/opin.sym} 1100 270 0 0 {name=p6 lab=d2}
+C {devices/opin.sym} 1100 400 0 0 {name=p7 lab=d3}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/inverter.sym} 490 0 0 0 {name=x1}
 C {devices/iopin.sym} 0 -140 2 0 {name=p8 lab=vp}
 C {devices/iopin.sym} 0 -120 2 0 {name=p9 lab=vn
