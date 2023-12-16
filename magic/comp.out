@@ -1,0 +1,102 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell unit_cell_decoder in circuit current_steering_dac (0)(60 instances)
+Flattening unmatched subcell current_steering_cell in circuit current_steering_dac (0)(32 instances)
+Flattening unmatched subcell dummy_current_steering_cell in circuit current_steering_dac (0)(28 instances)
+Flattening unmatched subcell half_dac_for_mirroring in circuit current_steering_dac (1)(2 instances)
+Flattening unmatched subcell dummy_current_steering_dac_unit_cell_with_encoder in circuit current_steering_dac (1)(28 instances)
+Flattening unmatched subcell current_steering_dac_unit_cell_with_encoder in circuit current_steering_dac (1)(32 instances)
+
+Class current_steering_dac (0):  Merged 4 parallel devices.
+Class current_steering_dac (1):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: current_steering_dac            |Circuit 2: current_steering_dac            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (240->236)         |sky130_fd_pr__pfet_01v8 (240->236)         
+sky130_fd_pr__nfet_01v8 (480)              |sky130_fd_pr__nfet_01v8 (480)              
+Number of devices: 716                     |Number of devices: 716                     
+Number of nets: 374                        |Number of nets: 374                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 401 symmetries.
+
+Subcircuit pins:
+Circuit 1: current_steering_dac            |Circuit 2: current_steering_dac            
+-------------------------------------------|-------------------------------------------
+Vbn                                        |Vbn                                        
+Vcn                                        |Vcn                                        
+I2                                         |I2                                         
+I1                                         |I1                                         
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+Y1                                         |Y1                                         
+Y0                                         |Y0                                         
+Y3                                         |Y3                                         
+Y2                                         |Y2                                         
+X3                                         |X3                                         
+X2                                         |X2                                         
+X1                                         |X1                                         
+X0                                         |X0                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes current_steering_dac and current_steering_dac are equivalent.
+
+Class current_difference_balanced (0):  Merged 30 parallel devices.
+Class current_difference_balanced (1):  Merged 30 parallel devices.
+Subcircuit summary:
+Circuit 1: current_difference_balanced     |Circuit 2: current_difference_balanced     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (20->5)            |sky130_fd_pr__nfet_01v8 (20->5)            
+sky130_fd_pr__pfet_01v8 (20->5)            |sky130_fd_pr__pfet_01v8 (20->5)            
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: current_difference_balanced     |Circuit 2: current_difference_balanced     
+-------------------------------------------|-------------------------------------------
+VDD                                        |VP **Mismatch**                            
+GND                                        |VN **Mismatch**                            
+I1                                         |I1                                         
+Vcp                                        |Vcp                                        
+I2                                         |I2                                         
+Vout                                       |Vout                                       
+Vcn                                        |Vcn                                        
+Vbp                                        |Vbp                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for current_difference_balanced and current_difference_balanced altered to match.
+Device classes current_difference_balanced and current_difference_balanced are equivalent.
+Flattening unmatched subcell binary_decoder_4bit_lvs in circuit dac_decoder_current_diff_bias_lvs.spice (0)(1 instance)
+Flattening unmatched subcell opamp_balanced_lvs in circuit dac_decoder_current_diff_bias_lvs.spice (0)(1 instance)
+Flattening unmatched subcell bias_schematic_lvs in circuit dac_decoder_current_diff_bias_lvs.spice (0)(1 instance)
+Flattening unmatched subcell opamp_balanced in circuit decoder_dac_current_difference.spice (1)(1 instance)
+Flattening unmatched subcell x4_bit_binary_decoder in circuit decoder_dac_current_difference.spice (1)(1 instance)
+Flattening unmatched subcell x2_bit_binary_decoder in circuit decoder_dac_current_difference.spice (1)(2 instances)
+Flattening unmatched subcell bias in circuit decoder_dac_current_difference.spice (1)(1 instance)
+
+Class dac_decoder_current_diff_bias_lvs.spice (0):  Merged 98 parallel devices.
+Class decoder_dac_current_difference.spice (1):  Merged 98 parallel devices.
+Subcircuit summary:
+Circuit 1: dac_decoder_current_diff_bias_l |Circuit 2: decoder_dac_current_difference. 
+-------------------------------------------|-------------------------------------------
+current_steering_dac (1)                   |current_steering_dac (1)                   
+sky130_fd_pr__nfet_01v8 (92->37)           |sky130_fd_pr__nfet_01v8 (92->37)           
+sky130_fd_pr__pfet_01v8 (76->33)           |sky130_fd_pr__pfet_01v8 (76->33)           
+current_difference_balanced (1)            |current_difference_balanced (1)            
+Number of devices: 72                      |Number of devices: 72                      
+Number of nets: 47                         |Number of nets: 47                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes dac_decoder_current_diff_bias_lvs.spice and decoder_dac_current_difference.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

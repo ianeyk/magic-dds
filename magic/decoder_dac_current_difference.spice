@@ -461,7 +461,7 @@ X39 VN a_300_80# a_660_80# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=
 * Top level circuit decoder_dac_current_difference
 
 Xopamp_balanced_0 opamp_balanced_0/V1 opamp_balanced_0/V2 opamp_balanced_0/Vout bias_0/Vb
-+ bias_0/Vcn bias_0/Vcp bias_0/Vbp opamp_balanced_0/VP VSUBS opamp_balanced
++ bias_0/Vcn bias_0/Vcp bias_0/Vbp bias_0/VP VSUBS opamp_balanced
 X4_bit_binary_decoder_0 4_bit_binary_decoder_0/b0 4_bit_binary_decoder_0/b1 4_bit_binary_decoder_0/b2
 + 4_bit_binary_decoder_0/b3 current_steering_dac_0/Y2 current_steering_dac_0/Y1 current_steering_dac_0/Y0
 + current_steering_dac_0/X1 current_steering_dac_0/X2 current_steering_dac_0/X3 bias_0/VP
@@ -472,7 +472,6 @@ Xcurrent_steering_dac_0 bias_0/VP current_steering_dac_0/X1 current_steering_dac
 + bias_0/Vcn VSUBS current_steering_dac
 Xbias_0 bias_0/Vb bias_0/Vcn bias_0/Vcp bias_0/Vbp bias_0/VP VSUBS bias
 Xcurrent_difference_balanced_0 current_steering_dac_0/I1 current_steering_dac_0/I2
-+ opamp_balanced_0/V1 bias_0/Vcn bias_0/Vcp bias_0/Vbp current_difference_balanced_0/VP
-+ VSUBS current_difference_balanced
++ opamp_balanced_0/V2 bias_0/Vcn bias_0/Vcp bias_0/Vbp bias_0/VP VSUBS current_difference_balanced
 .end
 
