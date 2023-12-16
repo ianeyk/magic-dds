@@ -156,7 +156,7 @@ lab=#net12}
 N -1300 110 -1300 300 {
 lab=#net13}
 C {madvlsi/capacitor.sym} 260 0 0 0 {name=C1
-value=0.2p
+value=0.05p
 m=1}
 C {madvlsi/nmos3.sym} 140 -100 1 0 {name=M1
 L=0.15
@@ -212,7 +212,7 @@ C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".par
 .control
 save all
 ic v(Vout)=0.9
-tran 0.1n 5u
+tran 0.1n 25u
 run
 plot v(Vin) v(Vout) v(Vnode) v(phi2)
 plot i(VIin) i(VIr)
@@ -269,7 +269,7 @@ C {madvlsi/gnd.sym} -300 -270 0 0 {name=l18 lab=GND}
 C {devices/lab_pin.sym} -300 -330 1 0 {name=p8 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 140 330 0 0 {name=p11 sig_type=std_logic lab=Vref}
 C {madvlsi/isource.sym} -350 520 0 0 {name=I2
-value=1m}
+value=0.5u}
 C {madvlsi/gnd.sym} -350 550 0 0 {name=l19 lab=GND}
 C {devices/lab_pin.sym} -80 -30 1 0 {name=p7 sig_type=std_logic lab=Vin}
 C {madvlsi/ammeter1.sym} -1120 -30 1 0 {name=VIin}
@@ -282,7 +282,7 @@ C {devices/lab_pin.sym} 190 -390 2 0 {name=p4 sig_type=std_logic lab=phi2}
 C {devices/lab_pin.sym} 440 60 3 0 {name=p10 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} 140 60 3 0 {name=p12 sig_type=std_logic lab=phi2}
 C {madvlsi/capacitor.sym} 260 170 1 0 {name=C4
-value=4p
+value=1p
 m=1}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic_balanced.sym} 240 350 0 0 {name=x2}
 C {madvlsi/isource.sym} -1700 140 0 0 {name=I3
@@ -290,7 +290,7 @@ value="sin(0 10u \{1/P/128\} 0 0 0)"}
 C {madvlsi/gnd.sym} -1700 170 0 0 {name=l4 lab=GND}
 C {madvlsi/gnd.sym} 510 80 0 0 {name=l7 lab=GND}
 C {madvlsi/capacitor.sym} -410 0 0 0 {name=C3
-value=0.4p
+value=0.05p
 m=1}
 C {madvlsi/nmos3.sym} -530 -100 1 0 {name=M5
 L=0.15
@@ -361,7 +361,7 @@ C {madvlsi/ammeter1.sym} -410 50 0 0 {name=VICnode2}
 C {devices/lab_pin.sym} -230 60 3 0 {name=p16 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} -530 60 3 0 {name=p17 sig_type=std_logic lab=phi2}
 C {madvlsi/capacitor.sym} -650 0 0 0 {name=C6
-value=8p
+value=1p
 m=1}
 C {madvlsi/gnd.sym} -650 30 0 0 {name=l9 lab=GND}
 C {madvlsi/gnd.sym} -1890 90 0 0 {name=l11 lab=GND}
@@ -387,7 +387,7 @@ C {madvlsi/resistor.sym} -960 -30 1 0 {name=R1
 value=90k
 m=1}
 C {madvlsi/isource.sym} -1690 470 2 0 {name=I1
-value="sin(0 10u \{1/P/64\} 0 0 0)"}
+value="sin(0 10u \{1/P/128\} 0 0 0)"}
 C {madvlsi/gnd.sym} -1690 500 0 0 {name=l13 lab=GND}
 C {madvlsi/gnd.sym} -1880 420 0 0 {name=l20 lab=GND}
 C {madvlsi/isource.sym} -1880 390 2 0 {name=I5
