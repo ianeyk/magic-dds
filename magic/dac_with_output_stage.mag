@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1702718973
+timestamp 1702722287
 << error_p >>
 rect 3728 19710 3740 19712
 rect 5028 19710 5040 19712
@@ -149,6 +149,7 @@ rect 19800 29920 19820 29960
 rect 19860 29940 20040 29960
 rect 19860 29920 19880 29940
 rect 19800 29900 19880 29920
+rect 19500 29770 20360 29850
 rect 19510 29090 19970 29130
 rect 20170 29090 20350 29130
 rect 19510 28960 20350 28980
@@ -389,7 +390,7 @@ timestamp 1702677849
 transform -1 0 19410 0 1 31510
 box -140 -870 2680 2500
 use current_steering_dac  current_steering_dac_0
-timestamp 1702704436
+timestamp 1702722181
 transform 1 0 10080 0 1 18030
 box -7300 -580 6560 16450
 use opamp_balanced  opamp_balanced_0
@@ -400,4 +401,8 @@ use opamp_balanced  opamp_balanced_1
 timestamp 1702677968
 transform 1 0 20450 0 1 24570
 box -140 -870 2770 6050
+use switched_capacitor_transmission_gate  switched_capacitor_transmission_gate_0
+timestamp 1702721627
+transform 1 0 20690 0 1 30930
+box -40 -110 400 3420
 << end >>
