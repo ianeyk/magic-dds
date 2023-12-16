@@ -88,7 +88,7 @@ lab=#net12}
 N -270 -30 -270 -20 {
 lab=Vin}
 C {madvlsi/capacitor.sym} 260 0 0 0 {name=C1
-value=2p
+value=0.2p
 m=1}
 C {madvlsi/nmos3.sym} 140 -100 1 0 {name=M1
 L=0.15
@@ -153,7 +153,7 @@ plot i(VIin) i(VIfeed) i(VIout)
 plot i(VICin) i(VICnode) i(VICout)
 .endc"}
 C {madvlsi/capacitor.sym} 510 0 0 0 {name=C2
-value=15p
+value=12p
 m=1}
 C {devices/lab_pin.sym} 570 -30 2 0 {name=p6 sig_type=std_logic lab=Vout}
 C {madvlsi/pmos3.sym} 140 30 3 0 {name=M3
@@ -222,7 +222,7 @@ C {devices/lab_pin.sym} 190 -390 2 0 {name=p4 sig_type=std_logic lab=phi2}
 C {devices/lab_pin.sym} 440 60 3 0 {name=p10 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} 140 60 3 0 {name=p12 sig_type=std_logic lab=phi2}
 C {madvlsi/capacitor.sym} 260 170 1 0 {name=C4
-value=5p
+value=4p
 m=1}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic_balanced.sym} 240 350 0 0 {name=x2}
 C {madvlsi/isource.sym} -330 140 0 0 {name=I3
