@@ -139,22 +139,26 @@ N -720 -30 -710 -30 {
 lab=#net9}
 N -1120 -30 -1090 -30 {
 lab=#net11}
-N -1690 320 -1690 440 {
+N -1400 260 -1400 380 {
 lab=#net12}
-N -1880 300 -1880 360 {
+N -1590 240 -1590 300 {
 lab=#net12}
-N -1880 300 -1690 300 {
+N -1590 240 -1400 240 {
 lab=#net12}
-N -1690 300 -1690 320 {
+N -1400 240 -1400 260 {
 lab=#net12}
-N -1640 300 -1300 300 {
-lab=#net13}
-N -1300 110 -1000 110 {
-lab=#net13}
-N -1690 300 -1650 300 {
+N -1400 240 -1350 240 {
 lab=#net12}
-N -1300 110 -1300 300 {
-lab=#net13}
+N -1200 240 -1180 240 {
+lab=Vref}
+N -1180 240 -1180 260 {
+lab=Vref}
+N -1350 240 -1260 240 {
+lab=#net12}
+N -1320 110 -1000 110 {
+lab=#net12}
+N -1320 110 -1320 240 {
+lab=#net12}
 C {madvlsi/capacitor.sym} 260 0 0 0 {name=C1
 value=0.05p
 m=1}
@@ -207,12 +211,12 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=64n
+C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=4n
 .save all
 .control
 save all
 ic v(Vout)=0.9
-tran 0.1n 100u uic
+tran 0.1n 50u
 run
 plot v(Vin) v(Vout) v(Vnode) v(phi2)
 plot i(VIin) i(VIr)
@@ -286,7 +290,7 @@ value=1p
 m=1}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic_balanced.sym} 240 350 0 0 {name=x2}
 C {madvlsi/isource.sym} -1700 140 0 0 {name=I3
-value="sin(0 16u \{1/P/128\} 0 0 0)"}
+value="sin(0 10u \{1/P/128\} 0 0 0)"}
 C {madvlsi/gnd.sym} -1700 170 0 0 {name=l4 lab=GND}
 C {madvlsi/gnd.sym} 510 80 0 0 {name=l7 lab=GND}
 C {madvlsi/capacitor.sym} -410 0 0 0 {name=C3
@@ -369,7 +373,7 @@ C {madvlsi/isource.sym} -1890 60 0 0 {name=I4
 value="pulse(-0.5u 0.5u 0 1n 1n \{P/2\} \{P+2n\})"}
 C {madvlsi/vdd.sym} -960 60 0 0 {name=l12 lab=VDD}
 C {madvlsi/gnd.sym} -960 300 0 0 {name=l21 lab=GND}
-C {devices/lab_pin.sym} -1240 300 2 0 {name=p18 sig_type=std_logic lab=Vref}
+C {devices/lab_pin.sym} -1180 260 3 0 {name=p18 sig_type=std_logic lab=Vref}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/opamp_schematic_balanced.sym} -900 130 0 0 {name=x5}
 C {devices/lab_pin.sym} -360 420 2 0 {name=p19 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} -360 440 2 0 {name=p20 sig_type=std_logic lab=Vcn}
@@ -386,13 +390,12 @@ C {devices/lab_pin.sym} -1030 270 0 0 {name=p30 sig_type=std_logic lab=Vbn}
 C {madvlsi/resistor.sym} -960 -30 1 0 {name=R1
 value=90k
 m=1}
-C {madvlsi/isource.sym} -1690 470 2 0 {name=I1
-value="sin(0 16u \{1/P/128\} 0 0 0)"}
-C {madvlsi/gnd.sym} -1690 500 0 0 {name=l13 lab=GND}
-C {madvlsi/gnd.sym} -1880 420 0 0 {name=l20 lab=GND}
-C {madvlsi/isource.sym} -1880 390 2 0 {name=I5
+C {madvlsi/isource.sym} -1400 410 2 0 {name=I1
+value="sin(0 10u \{1/P/128\} 0 0 0)"}
+C {madvlsi/gnd.sym} -1400 440 0 0 {name=l13 lab=GND}
+C {madvlsi/gnd.sym} -1590 360 0 0 {name=l20 lab=GND}
+C {madvlsi/isource.sym} -1590 330 2 0 {name=I5
 value="pulse(-0.5u 0.5u 0 1n 1n \{P/2\} \{P+2n\})"}
-C {madvlsi/resistor.sym} -1270 300 3 0 {name=R2
+C {madvlsi/resistor.sym} -1230 240 1 0 {name=R2
 value=90k
 m=1}
-C {madvlsi/ammeter1.sym} -1640 300 1 0 {name=VIin1}

@@ -191,7 +191,7 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=16n
+C {devices/code_shown.sym} 720 -340 0 0 {name=s1 only_toplevel=false value=".param P=4n
 .save all
 .control
 save all
