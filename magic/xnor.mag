@@ -1,0 +1,70 @@
+magic
+tech sky130A
+timestamp 1702731850
+<< nwell >>
+rect 250 310 255 315
+rect 245 220 260 310
+rect 250 215 255 220
+rect 480 215 495 315
+<< pdiff >>
+rect 245 220 250 310
+rect 480 215 485 315
+<< nsubdiff >>
+rect 250 310 255 315
+rect 250 220 260 310
+rect 250 215 255 220
+rect 485 215 495 315
+<< poly >>
+rect 315 180 355 190
+rect 315 160 325 180
+rect 345 160 355 180
+rect 430 180 520 190
+rect 430 170 490 180
+rect 315 150 355 160
+rect 480 160 490 170
+rect 510 160 520 180
+rect 480 150 520 160
+<< polycont >>
+rect 325 160 345 180
+rect 490 160 510 180
+<< locali >>
+rect 245 220 260 310
+rect 375 220 415 310
+rect 480 220 495 310
+rect 315 180 355 190
+rect 315 170 325 180
+rect 205 160 325 170
+rect 345 160 355 180
+rect 205 150 355 160
+rect 480 180 520 190
+rect 480 160 490 180
+rect 510 170 520 180
+rect 510 160 630 170
+rect 480 150 630 160
+<< metal1 >>
+rect 245 220 260 310
+rect 480 220 495 310
+use nand2  nand2_0
+timestamp 1702727979
+transform 1 0 95 0 1 15
+box -95 -15 175 320
+use nand2  nand2_1
+timestamp 1702727979
+transform 1 0 330 0 1 15
+box -95 -15 175 320
+use nand2  nand2_2
+timestamp 1702727979
+transform 1 0 565 0 1 15
+box -95 -15 175 320
+<< labels >>
+flabel space 150 0 150 0 5 FreeSans 160 0 0 0 A
+port 2 s
+flabel space 190 0 190 0 5 FreeSans 160 0 0 0 B
+port 3 s
+flabel space 620 0 620 0 5 FreeSans 160 0 0 0 _A
+port 4 s
+flabel space 660 0 660 0 5 FreeSans 160 0 0 0 _B
+port 5 s
+flabel locali 395 310 395 310 1 FreeSans 160 0 0 0 Y
+port 1 n
+<< end >>

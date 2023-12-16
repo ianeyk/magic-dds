@@ -1,0 +1,15 @@
+* SPICE3 file created from nand5.ext - technology: sky130A
+
+*.subckt nand5 A B Y VP VN C D E
+X0 a_180_0# A VN VN sky130_fd_pr__nfet_01v8 ad=0.125 pd=1.25 as=0.5 ps=3 w=1 l=0.15
+X1 VP B Y VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X2 Y E VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X3 a_420_0# D a_340_0# VN sky130_fd_pr__nfet_01v8 ad=0.125 pd=1.25 as=0.125 ps=1.25 w=1 l=0.15
+X4 VP D Y VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X5 a_260_0# B a_180_0# VN sky130_fd_pr__nfet_01v8 ad=0.125 pd=1.25 as=0.125 ps=1.25 w=1 l=0.15
+X6 Y C VP VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X7 Y E a_420_0# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.125 ps=1.25 w=1 l=0.15
+X8 a_340_0# C a_260_0# VN sky130_fd_pr__nfet_01v8 ad=0.125 pd=1.25 as=0.125 ps=1.25 w=1 l=0.15
+X9 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+*.ends
+

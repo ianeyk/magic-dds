@@ -69,7 +69,7 @@ C {madvlsi/vdd.sym} 60 -100 0 0 {name=l2 lab=VDD}
 C {madvlsi/gnd.sym} -320 0 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 220 10 2 0 {name=p1 sig_type=std_logic lab=_b0}
 C {devices/lab_pin.sym} 220 30 2 0 {name=p2 sig_type=std_logic lab=b0}
-C {devices/code_shown.sym} 590 -220 0 0 {name=SPICE only_toplevel=false value=".param P=640n
+C {devices/code_shown.sym} 590 -220 0 0 {name=SPICE only_toplevel=false value=".param P=16n
 .control
 save all
 tran .1n 10u

@@ -1,0 +1,113 @@
+magic
+tech sky130A
+timestamp 1702727979
+<< nwell >>
+rect -95 180 175 320
+<< nmos >>
+rect 50 0 65 100
+rect 90 0 105 100
+<< pmos >>
+rect 25 200 40 300
+rect 90 200 105 300
+<< ndiff >>
+rect 0 85 50 100
+rect 0 15 15 85
+rect 35 15 50 85
+rect 0 0 50 15
+rect 65 0 90 100
+rect 105 85 155 100
+rect 105 15 120 85
+rect 140 15 155 85
+rect 105 0 155 15
+<< pdiff >>
+rect -25 285 25 300
+rect -25 215 -10 285
+rect 10 215 25 285
+rect -25 200 25 215
+rect 40 285 90 300
+rect 40 215 55 285
+rect 75 215 90 285
+rect 40 200 90 215
+rect 105 285 155 300
+rect 105 215 120 285
+rect 140 215 155 285
+rect 105 200 155 215
+<< ndiffc >>
+rect 15 15 35 85
+rect 120 15 140 85
+<< pdiffc >>
+rect -10 215 10 285
+rect 55 215 75 285
+rect 120 215 140 285
+<< psubdiff >>
+rect -50 85 0 100
+rect -50 15 -35 85
+rect -15 15 0 85
+rect -50 0 0 15
+<< nsubdiff >>
+rect -75 285 -25 300
+rect -75 215 -60 285
+rect -40 215 -25 285
+rect -75 200 -25 215
+<< psubdiffcont >>
+rect -35 15 -15 85
+<< nsubdiffcont >>
+rect -60 215 -40 285
+<< poly >>
+rect 25 300 40 315
+rect 90 300 105 315
+rect 25 165 40 200
+rect 25 150 65 165
+rect 50 100 65 150
+rect 90 100 105 200
+rect 50 -15 65 0
+rect 90 -15 105 0
+<< locali >>
+rect -70 285 20 295
+rect -70 215 -60 285
+rect -40 215 -10 285
+rect 10 215 20 285
+rect -70 205 20 215
+rect 45 285 85 295
+rect 45 215 55 285
+rect 75 215 85 285
+rect 45 205 85 215
+rect 110 285 150 295
+rect 110 215 120 285
+rect 140 215 150 285
+rect 110 205 150 215
+rect 65 155 85 205
+rect 65 135 130 155
+rect 110 95 130 135
+rect -45 85 45 95
+rect -45 15 -35 85
+rect -15 15 15 85
+rect 35 15 45 85
+rect -45 5 45 15
+rect 110 85 150 95
+rect 110 15 120 85
+rect 140 15 150 85
+rect 110 5 150 15
+<< viali >>
+rect -60 215 -40 285
+rect -10 215 10 285
+rect 120 215 140 285
+<< metal1 >>
+rect -70 285 150 295
+rect -70 215 -60 285
+rect -40 215 -10 285
+rect 10 215 120 285
+rect 140 215 150 285
+rect -70 205 150 215
+<< labels >>
+flabel poly 55 -15 55 -15 1 FreeSans 160 0 0 0 A
+port 1 n
+flabel poly 95 -15 95 -15 1 FreeSans 160 0 0 0 B
+port 2 n
+flabel locali 65 295 65 295 5 FreeSans 160 0 0 0 Y
+port 3 s
+flabel locali -45 50 -45 50 3 FreeSans 160 0 0 0 VN
+port 5 e
+flabel locali -70 250 -70 250 3 FreeSans 160 0 0 0 VP
+port 4 e
+<< end >>
