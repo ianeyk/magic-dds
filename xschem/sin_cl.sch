@@ -340,11 +340,179 @@ N -310 2770 -30 2770 {
 lab=b5}
 N -370 2790 -30 2790 {
 lab=b6}
-N -130 2900 -30 2900 {}
-N -220 2920 -30 2920 {}
-N -250 2940 -30 2940 {}
-N -310 2960 -30 2960 {}
-N -370 2980 -30 2980 {}
+N -130 2900 -30 2900 {
+lab=b2}
+N -220 2920 -30 2920 {
+lab=_b3}
+N -250 2940 -30 2940 {
+lab=b4}
+N -310 2960 -30 2960 {
+lab=b5}
+N -370 2980 -30 2980 {
+lab=b6}
+N -160 3110 -30 3110 {
+lab=_b2}
+N -190 3130 -30 3130 {
+lab=b3}
+N -250 3150 -30 3150 {
+lab=b4}
+N -310 3170 -30 3170 {
+lab=b5}
+N -370 3190 -30 3190 {
+lab=b6}
+N -70 3310 -30 3310 {
+lab=b1}
+N -160 3330 -30 3330 {
+lab=_b2}
+N -220 3350 -30 3350 {
+lab=_b3}
+N -400 3370 -30 3370 {
+lab=_b6}
+N -70 3490 -30 3490 {
+lab=b1}
+N -160 3510 -30 3510 {
+lab=_b2}
+N -220 3530 -30 3530 {
+lab=_b3}
+N -280 3550 -30 3550 {
+lab=_b4}
+N -70 3660 -30 3660 {
+lab=b1}
+N -220 3680 -30 3680 {
+lab=_b3}
+N -340 3700 -30 3700 {
+lab=_b5}
+N -400 3720 -30 3720 {
+lab=_b6}
+N -100 3840 -30 3840 {
+lab=_b1}
+N -130 3860 -30 3860 {
+lab=b2}
+N -280 3880 -30 3880 {
+lab=_b4}
+N -340 3900 -30 3900 {
+lab=_b5}
+N -100 4020 -30 4020 {
+lab=_b1}
+N -190 4040 -30 4040 {
+lab=b3}
+N -280 4060 -30 4060 {
+lab=_b4}
+N -340 4080 -30 4080 {
+lab=_b5}
+N -100 4200 -30 4200 {
+lab=_b1}
+N -190 4220 -30 4220 {
+lab=b3}
+N -280 4240 -30 4240 {
+lab=_b4}
+N -400 4260 -30 4260 {
+lab=_b6}
+N -160 4380 -30 4380 {
+lab=_b2}
+N -220 4400 -30 4400 {
+lab=_b3}
+N -250 4420 -30 4420 {
+lab=b4}
+N -310 4440 -30 4440 {
+lab=b5}
+N -160 4540 -30 4540 {
+lab=_b2}
+N -220 4560 -30 4560 {
+lab=_b3}
+N -280 4580 -30 4580 {
+lab=_b4}
+N -310 4600 -30 4600 {
+lab=b5}
+N -30 4610 -30 4620 {
+lab=b6}
+N -370 4610 -30 4610 {
+lab=b6}
+N 70 2390 170 2390 {
+lab=#net20}
+N 70 2220 70 2370 {
+lab=#net21}
+N 70 2370 170 2370 {
+lab=#net21}
+N 90 2350 170 2350 {
+lab=#net22}
+N 90 2060 90 2350 {
+lab=#net22}
+N 60 2060 90 2060 {
+lab=#net22}
+N 70 2410 170 2410 {
+lab=#net23}
+N 70 2410 70 2560 {
+lab=#net23}
+N 90 2430 170 2430 {
+lab=#net24}
+N 90 2430 90 2750 {
+lab=#net24}
+N 80 2750 90 2750 {
+lab=#net24}
+N 70 3340 140 3340 {
+lab=#net25}
+N 80 3320 140 3320 {
+lab=#net26}
+N 80 3150 80 3320 {
+lab=#net26}
+N 100 3300 140 3300 {
+lab=#net27}
+N 100 2940 100 3300 {
+lab=#net27}
+N 80 2940 100 2940 {
+lab=#net27}
+N 80 3360 140 3360 {
+lab=#net28}
+N 80 3360 80 3520 {
+lab=#net28}
+N 70 3520 80 3520 {
+lab=#net28}
+N 100 3380 140 3380 {
+lab=#net29}
+N 70 3690 100 3690 {
+lab=#net29}
+N 100 3380 100 3690 {
+lab=#net29}
+N 70 4230 150 4230 {}
+N 70 4210 150 4210 {}
+N 70 4050 70 4210 {}
+N 90 4190 150 4190 {}
+N 90 3870 90 4190 {}
+N 70 3870 90 3870 {}
+N 70 4250 150 4250 {}
+N 70 4250 70 4410 {}
+N 90 4270 150 4270 {}
+N 90 4270 90 4580 {}
+N 80 4580 90 4580 {}
+N 320 2460 320 3320 {}
+N 320 2460 350 2460 {}
+N 350 2390 350 2460 {}
+N 320 3360 320 4170 {}
+N 320 4170 330 4170 {}
+N 330 4170 330 4230 {}
+N 410 3340 440 3340 {}
+N 440 450 440 3340 {}
+N 860 390 930 390 {
+lab=_b0}
+N 860 310 860 390 {
+lab=_b0}
+N 870 380 930 380 {
+lab=b0}
+N 870 300 870 380 {
+lab=b0}
+N 880 420 930 420 {
+lab=#net8}
+N 810 410 930 410 {
+lab=#net9}
+N 810 410 810 420 {
+lab=#net9}
+N 870 250 870 300 {
+lab=b0}
+N 860 260 860 310 {
+lab=_b0}
+N 440 420 810 420 {}
+N 440 420 440 450 {}
 C {devices/ipin.sym} 0 0 0 0 {name=p1 lab=b0}
 C {devices/ipin.sym} 0 30 0 0 {name=p2 lab=_b0}
 C {devices/ipin.sym} -70 60 1 0 {name=p1 lab=b1}
@@ -365,7 +533,7 @@ C {devices/ipin.sym} 0 0 0 0 {name=p3 lab=b0}
 C {devices/opin.sym} 1080 0 0 0 {name=p4 lab=d0}
 C {devices/opin.sym} 1080 140 0 0 {name=p5 lab=d1}
 C {devices/opin.sym} 1080 270 0 0 {name=p6 lab=d2}
-C {devices/opin.sym} 1080 380 0 0 {name=p7 lab=d3}
+C {devices/opin.sym} 1080 400 0 0 {name=p7 lab=d3}
 C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/inverter.sym} 490 0 0 0 {name=x1}
 C {devices/iopin.sym} 0 -140 2 0 {name=p8 lab=vp}
 C {devices/iopin.sym} 0 -120 2 0 {name=p9 lab=vn
@@ -495,4 +663,71 @@ C {devices/lab_pin.sym} 0 3000 3 0 {name=p71 sig_type=std_logic lab=vn
 C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand5.sym} 10 3120 0 0 {name=x31}
 C {devices/lab_pin.sym} 0 3090 1 0 {name=p72 sig_type=std_logic lab=vp}
 C {devices/lab_pin.sym} 0 3210 3 0 {name=p73 sig_type=std_logic lab=vn
+}
+C {devices/lab_pin.sym} 0 3290 1 0 {name=p74 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 0 3390 3 0 {name=p75 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand4.sym} 10 3320 0 0 {name=x32}
+C {devices/lab_pin.sym} 0 3470 1 0 {name=p76 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 0 3570 3 0 {name=p77 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand4.sym} 10 3500 0 0 {name=x33}
+C {devices/lab_pin.sym} 0 3640 1 0 {name=p78 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 0 3740 3 0 {name=p79 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand4.sym} 10 3670 0 0 {name=x34}
+C {devices/lab_pin.sym} 0 3820 1 0 {name=p80 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 0 3920 3 0 {name=p81 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand4.sym} 10 3850 0 0 {name=x35}
+C {devices/lab_pin.sym} 0 4000 1 0 {name=p82 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 0 4100 3 0 {name=p83 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand4.sym} 10 4030 0 0 {name=x36}
+C {devices/lab_pin.sym} 0 4180 1 0 {name=p84 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 0 4280 3 0 {name=p85 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand4.sym} 10 4210 0 0 {name=x37}
+C {devices/lab_pin.sym} 0 4360 1 0 {name=p86 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 0 4460 3 0 {name=p87 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand4.sym} 10 4390 0 0 {name=x38}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand5.sym} 10 4550 0 0 {name=x39}
+C {devices/lab_pin.sym} 0 4520 1 0 {name=p88 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 0 4640 3 0 {name=p89 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand5.sym} 210 2360 0 0 {name=x40}
+C {devices/lab_pin.sym} 200 2330 1 0 {name=p90 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 200 2450 3 0 {name=p91 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand5.sym} 180 3310 0 0 {name=x41}
+C {devices/lab_pin.sym} 170 3280 1 0 {name=p92 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 170 3400 3 0 {name=p93 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand5.sym} 190 4200 0 0 {name=x42}
+C {devices/lab_pin.sym} 180 4170 1 0 {name=p94 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 180 4290 3 0 {name=p95 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/inverter.sym} 280 2390 0 0 {name=x43}
+C {devices/lab_pin.sym} 310 2420 2 0 {name=p96 sig_type=std_logic lab=vn
+}
+C {devices/lab_pin.sym} 310 2360 2 0 {name=p97 sig_type=std_logic lab=vp}
+C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/inverter.sym} 250 3340 0 0 {name=x44}
+C {devices/lab_pin.sym} 280 3370 2 0 {name=p98 sig_type=std_logic lab=vn
+}
+C {devices/lab_pin.sym} 280 3310 2 0 {name=p99 sig_type=std_logic lab=vp}
+C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/inverter.sym} 260 4230 0 0 {name=x45}
+C {devices/lab_pin.sym} 290 4260 2 0 {name=p100 sig_type=std_logic lab=vn
+}
+C {devices/lab_pin.sym} 290 4200 2 0 {name=p101 sig_type=std_logic lab=vp}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/nand3.sym} 360 3330 0 0 {name=x46}
+C {devices/lab_pin.sym} 350 3300 1 0 {name=p102 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 350 3380 3 0 {name=p103 sig_type=std_logic lab=vn
+}
+C {devices/lab_pin.sym} 1010 350 2 0 {name=p104 sig_type=std_logic lab=vp}
+C {devices/lab_pin.sym} 1010 450 2 0 {name=p105 sig_type=std_logic lab=vn
+}
+C {/home/madvlsi/dev/git/magic-dds/xschem/logic_gates/xnor.sym} 1080 400 0 0 {name=x47}
+C {/home/madvlsi/dev/git/magic-dds/xschem/other_project_files/inverter.sym} 810 420 0 0 {name=x48}
+C {devices/lab_pin.sym} 840 450 2 0 {name=p106 sig_type=std_logic lab=vn
 }
