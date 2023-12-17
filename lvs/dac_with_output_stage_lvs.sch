@@ -65,10 +65,6 @@ N -20 -90 40 -90 {
 lab=VDD}
 N -20 -120 -20 -90 {
 lab=VDD}
-N 270 -120 520 -120 {
-lab=#net1}
-N 270 -80 520 -80 {
-lab=#net2}
 N 450 -250 450 -120 {
 lab=#net1}
 N 450 -250 530 -250 {
@@ -159,6 +155,14 @@ N 1380 -330 1470 -330 {
 lab=#net11}
 N 1230 -330 1380 -330 {
 lab=#net11}
+N 270 -120 450 -120 {
+lab=#net1}
+N 270 -80 450 -80 {
+lab=#net2}
+N 450 -120 520 -80 {
+lab=#net1}
+N 450 -80 520 -120 {
+lab=#net2}
 C {/home/madvlsi/dev/git/magic-dds/lvs/current_steering_dac.sym} 190 -70 0 0 {name=x1}
 C {/home/madvlsi/dev/git/magic-dds/xschem/binary_decoder_4bit_lvs.sym} -130 -260 0 0 {name=x2}
 C {/home/madvlsi/dev/git/magic-dds/lvs/opamp_balanced_lvs.sym} 540 -100 0 0 {name=x5}

@@ -2,7 +2,7 @@
 **.subckt dac_with_output_stage_lvs
 x1 Vcn1 Vbn1 net4 net3 net1 net2 net6 net7 net8 VDD VDD net5 current_steering_dac
 x2 net5 net8 VDD net13 net14 net4 net7 net15 net16 GND net6 net3 binary_decoder_4bit_lvs
-x5 Vbp Vcp net9 net1 net2 Vcn Vbn opamp_balanced_lvs
+x5 Vbp Vcp net9 net2 net1 Vcn Vbn opamp_balanced_lvs
 x4 Vbp1 Vcn1 Vcp1 Vbn1 bias_schematic_lvs
 x6 Vbp Vcn Vcp Vbn bias_schematic_lvs
 x3 Vbp Vcp Vout Vref net11 Vcn Vbn opamp_balanced_lvs

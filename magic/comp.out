@@ -78,22 +78,41 @@ sky130_fd_pr__cap_mim_m3_1 (5)             |sky130_fd_pr__cap_mim_m3_1 (5)
 Number of devices: 124                     |Number of devices: 124                     
 Number of nets: 72                         |Number of nets: 72                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: dac_with_output_stage_lvs.spice |Circuit 2: dac_with_output_stage.spice     
-
----------------------------------------------------------------------------------------
-Net: net2                                  |Net: opamp_balanced_0/V2                   
-  current_steering_dac/I2 = 1              |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/2 = 1            |  current_steering_dac/I1 = 1              
-  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |  sky130_fd_pr__res_xhigh_po/(1|2) = 1     
-                                           |                                           
-Net: net1                                  |Net: opamp_balanced_0/V1                   
-  current_steering_dac/I1 = 1              |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/2 = 1            |  current_steering_dac/I2 = 1              
-  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |  sky130_fd_pr__res_xhigh_po/(1|2) = 1     
----------------------------------------------------------------------------------------
-Netlists do not match.
+Netlists match uniquely with property errors.
+sky130_fd_pr__cap_mim_m3_1:C3 vs. sky130_fd_pr__cap_mim_m3_1:0:
+ L circuit1: 1   circuit2: 10   (delta=164%, cutoff=1%)
+ W circuit1: 1   circuit2: 100   (delta=196%, cutoff=1%)
+sky130_fd_pr__cap_mim_m3_1:C2 vs. sky130_fd_pr__cap_mim_m3_1:3:
+ L circuit1: 1   circuit2: 2.5   (delta=85.7%, cutoff=1%)
+ W circuit1: 1   circuit2: 10   (delta=164%, cutoff=1%)
+sky130_fd_pr__cap_mim_m3_1:C4 vs. sky130_fd_pr__cap_mim_m3_1:4:
+ L circuit1: 1   circuit2: 2.5   (delta=85.7%, cutoff=1%)
+ W circuit1: 1   circuit2: 10   (delta=164%, cutoff=1%)
+sky130_fd_pr__cap_mim_m3_1:C5 vs. sky130_fd_pr__cap_mim_m3_1:8:
+ L circuit1: 1   circuit2: 60   (delta=193%, cutoff=1%)
+ W circuit1: 1   circuit2: 100   (delta=196%, cutoff=1%)
+sky130_fd_pr__cap_mim_m3_1:C1 vs. sky130_fd_pr__cap_mim_m3_1:2:
+ L circuit1: 1   circuit2: 10   (delta=164%, cutoff=1%)
+ W circuit1: 1   circuit2: 100   (delta=196%, cutoff=1%)
+sky130_fd_pr__res_xhigh_po:R1 vs. sky130_fd_pr__res_xhigh_po:1:
+ L circuit1: 1   circuit2: 34.5   (delta=189%, cutoff=1%)
+ W circuit1: 1   circuit2: 0.7   (delta=35.3%, cutoff=1%)
+sky130_fd_pr__res_xhigh_po:R2 vs. sky130_fd_pr__res_xhigh_po:5:
+ L circuit1: 1   circuit2: 34.5   (delta=189%, cutoff=1%)
+ W circuit1: 1   circuit2: 0.7   (delta=35.3%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:M4 vs. switched_capacitor_transmission_gate_1/sky130_fd_pr__pfet_01v8:3:
+ W circuit1: 12   circuit2: 10.2   (delta=16.2%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:M8 vs. switched_capacitor_transmission_gate_0/sky130_fd_pr__pfet_01v8:1:
+ W circuit1: 12   circuit2: 10.2   (delta=16.2%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:M3 vs. switched_capacitor_transmission_gate_1/sky130_fd_pr__pfet_01v8:1:
+ W circuit1: 12   circuit2: 10.2   (delta=16.2%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:M7 vs. switched_capacitor_transmission_gate_0/sky130_fd_pr__pfet_01v8:3:
+ W circuit1: 12   circuit2: 10.2   (delta=16.2%, cutoff=1%)
 Cells have no pins;  pin matching not needed.
 Device classes dac_with_output_stage_lvs.spice and dac_with_output_stage.spice are equivalent.
 
-Final result: Netlists do not match.
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ dac_with_output_stage_lvs.spice
