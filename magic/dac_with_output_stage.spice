@@ -88,12 +88,12 @@ X2_bit_binary_decoder_0 b0 b1 y1 y2 y3 2_bit_binary_decoder_1/VP VSUBS x2_bit_bi
 X2_bit_binary_decoder_1 b2 b3 x1 x2 x3 2_bit_binary_decoder_1/VP VSUBS x2_bit_binary_decoder
 .ends
 
-.subckt switched_capacitor_transmission_gate phi1 phi2 C w_n40_870# a_260_0# a_0_0#
-+ VSUBS
-X0 C phi1 a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1 pd=4.5 as=2 ps=9 w=4 l=0.15
-X1 a_260_0# phi2 C w_n40_870# sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.15
-X2 a_260_0# phi2 C VSUBS sky130_fd_pr__nfet_01v8 ad=2 pd=9 as=1 ps=4.5 w=4 l=0.15
-X3 C phi1 a_0_0# w_n40_870# sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.15
+.subckt switched_capacitor_transmission_gate phi1 phi2 w_n40_1230# a_130_0# a_260_0#
++ a_0_0# VSUBS
+X0 a_130_0# phi2 a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1 pd=4.5 as=2 ps=9 w=4 l=0.15
+X1 a_260_0# phi2 a_130_0# w_n40_1230# sky130_fd_pr__pfet_01v8 ad=5.1 pd=21.4 as=2.55 ps=10.7 w=10.2 l=0.15
+X2 a_260_0# phi1 a_130_0# VSUBS sky130_fd_pr__nfet_01v8 ad=2 pd=9 as=1 ps=4.5 w=4 l=0.15
+X3 a_130_0# phi1 a_0_0# w_n40_1230# sky130_fd_pr__pfet_01v8 ad=2.55 pd=10.7 as=5.1 ps=21.4 w=10.2 l=0.15
 .ends
 
 .subckt dummy_current_steering_dac_unit_cell_with_encoder I1 I2 Vbn Vcn Vx Vx1 Vy
@@ -433,10 +433,10 @@ X4_bit_binary_decoder_0 4_bit_binary_decoder_0/b0 4_bit_binary_decoder_0/b1 4_bi
 + 4_bit_binary_decoder_0/b3 current_steering_dac_0/Y2 current_steering_dac_0/Y1 current_steering_dac_0/Y0
 + current_steering_dac_0/X1 current_steering_dac_0/X2 current_steering_dac_0/X3 bias_1/VP
 + bias_1/VN x4_bit_binary_decoder
-Xswitched_capacitor_transmission_gate_0 phi1 phi2 switched_capacitor_transmission_gate_0/C
-+ bias_1/VP opamp_balanced_1/V2 opamp_balanced_0/Vout bias_1/VN switched_capacitor_transmission_gate
-Xswitched_capacitor_transmission_gate_1 phi1 phi2 switched_capacitor_transmission_gate_1/C
-+ bias_1/VP Vout opamp_balanced_1/V2 bias_1/VN switched_capacitor_transmission_gate
+Xswitched_capacitor_transmission_gate_0 phi1 phi2 bias_1/VP li_20290_34010# opamp_balanced_1/V2
++ opamp_balanced_0/Vout bias_1/VN switched_capacitor_transmission_gate
+Xswitched_capacitor_transmission_gate_1 phi2 phi1 bias_1/VP li_20710_34010# opamp_balanced_1/V2
++ Vout bias_1/VN switched_capacitor_transmission_gate
 Xcurrent_steering_dac_0 bias_1/VP current_steering_dac_0/X1 current_steering_dac_0/X2
 + current_steering_dac_0/X3 current_steering_dac_0/Y0 current_steering_dac_0/Y1 current_steering_dac_0/Y2
 + bias_1/VP opamp_balanced_0/V2 opamp_balanced_0/V1 bias_1/VP bias_1/Vb bias_1/Vcn
