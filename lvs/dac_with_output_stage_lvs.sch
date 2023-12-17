@@ -116,11 +116,11 @@ lab=#net11}
 N 1380 -330 1380 -100 {
 lab=#net11}
 N 1530 -330 1630 -330 {
-lab=Vput}
+lab=Vout}
 N 1630 -330 1630 -120 {
-lab=Vput}
+lab=Vout}
 N 1590 -120 1630 -120 {
-lab=Vput}
+lab=Vout}
 N 1380 -570 1470 -570 {
 lab=#net12}
 N 1470 -570 1500 -570 {
@@ -130,7 +130,7 @@ lab=#net12}
 N 1620 -640 1620 -570 {
 lab=#net12}
 N 1680 -640 1680 -570 {
-lab=Vput}
+lab=Vout}
 N 1320 -640 1320 -570 {
 lab=#net11}
 N 1380 -640 1380 -570 {
@@ -142,7 +142,7 @@ lab=#net12}
 N 1620 -570 1620 -510 {
 lab=#net12}
 N 1680 -570 1680 -510 {
-lab=Vput}
+lab=Vout}
 N 1530 -570 1620 -570 {
 lab=#net12}
 N 1230 -570 1230 -330 {
@@ -150,11 +150,11 @@ lab=#net11}
 N 1230 -570 1320 -570 {
 lab=#net11}
 N 1680 -570 1760 -570 {
-lab=Vput}
+lab=Vout}
 N 1760 -570 1760 -330 {
-lab=Vput}
+lab=Vout}
 N 1630 -330 1760 -330 {
-lab=Vput}
+lab=Vout}
 N 1380 -330 1470 -330 {
 lab=#net11}
 N 1230 -330 1380 -330 {
@@ -339,3 +339,5 @@ C {madvlsi/gnd.sym} 760 -40 0 0 {name=l7 lab=GND}
 C {madvlsi/gnd.sym} 1050 -40 0 0 {name=l8 lab=GND}
 C {madvlsi/gnd.sym} 1490 -510 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} 1630 -120 2 0 {name=p29 sig_type=std_logic lab=Vout}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1760 -300 0 0 {name=C5 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
+C {madvlsi/gnd.sym} 1760 -270 0 0 {name=l10 lab=GND}

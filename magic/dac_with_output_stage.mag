@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1702791422
+timestamp 1702794383
 << nwell >>
 rect 19930 31640 20090 34120
 rect 20690 31640 21110 34120
@@ -832,11 +832,11 @@ timestamp 1702677968
 transform 1 0 20230 0 1 24570
 box -140 -870 2770 6050
 use switched_capacitor_transmission_gate  switched_capacitor_transmission_gate_0
-timestamp 1702791239
+timestamp 1702794383
 transform 1 0 20130 0 1 30770
 box -40 -30 400 3420
 use switched_capacitor_transmission_gate  switched_capacitor_transmission_gate_1
-timestamp 1702791239
+timestamp 1702794383
 transform 1 0 20550 0 1 30770
 box -40 -30 400 3420
 << labels >>
