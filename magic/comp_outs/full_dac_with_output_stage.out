@@ -1,0 +1,86 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell unit_cell_decoder in circuit current_steering_dac (0)(60 instances)
+Flattening unmatched subcell current_steering_cell in circuit current_steering_dac (0)(32 instances)
+Flattening unmatched subcell dummy_current_steering_cell in circuit current_steering_dac (0)(28 instances)
+Flattening unmatched subcell half_dac_for_mirroring in circuit current_steering_dac (1)(2 instances)
+Flattening unmatched subcell dummy_current_steering_dac_unit_cell_with_encoder in circuit current_steering_dac (1)(28 instances)
+Flattening unmatched subcell current_steering_dac_unit_cell_with_encoder in circuit current_steering_dac (1)(32 instances)
+
+Class current_steering_dac (0):  Merged 4 parallel devices.
+Class current_steering_dac (1):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: current_steering_dac            |Circuit 2: current_steering_dac            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (240->236)         |sky130_fd_pr__pfet_01v8 (240->236)         
+sky130_fd_pr__nfet_01v8 (480)              |sky130_fd_pr__nfet_01v8 (480)              
+Number of devices: 716                     |Number of devices: 716                     
+Number of nets: 374                        |Number of nets: 374                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 401 symmetries.
+
+Subcircuit pins:
+Circuit 1: current_steering_dac            |Circuit 2: current_steering_dac            
+-------------------------------------------|-------------------------------------------
+Vbn                                        |Vbn                                        
+Vcn                                        |Vcn                                        
+I2                                         |I2                                         
+I1                                         |I1                                         
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+Y1                                         |Y1                                         
+Y0                                         |Y0                                         
+Y3                                         |Y3                                         
+Y2                                         |Y2                                         
+X3                                         |X3                                         
+X2                                         |X2                                         
+X1                                         |X1                                         
+X0                                         |X0                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes current_steering_dac and current_steering_dac are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po and Circuit 2 cell sky130_fd_pr__res_xhigh_po are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_xhigh_po and sky130_fd_pr__res_xhigh_po are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell binary_decoder_4bit_lvs in circuit dac_with_output_stage_lvs.spice (0)(1 instance)
+Flattening unmatched subcell opamp_balanced_lvs in circuit dac_with_output_stage_lvs.spice (0)(2 instances)
+Flattening unmatched subcell bias_schematic_lvs in circuit dac_with_output_stage_lvs.spice (0)(2 instances)
+Flattening unmatched subcell opamp_balanced in circuit dac_with_output_stage.spice (1)(2 instances)
+Flattening unmatched subcell x4_bit_binary_decoder in circuit dac_with_output_stage.spice (1)(1 instance)
+Flattening unmatched subcell x2_bit_binary_decoder in circuit dac_with_output_stage.spice (1)(2 instances)
+Flattening unmatched subcell switched_capacitor_transmission_gate in circuit dac_with_output_stage.spice (1)(2 instances)
+Flattening unmatched subcell bias in circuit dac_with_output_stage.spice (1)(2 instances)
+
+Class dac_with_output_stage_lvs.spice (0):  Merged 196 parallel devices.
+Class dac_with_output_stage.spice (1):  Merged 196 parallel devices.
+Class dac_with_output_stage.spice (1):  Merged 4 series devices.
+Subcircuit summary:
+Circuit 1: dac_with_output_stage_lvs.spice |Circuit 2: dac_with_output_stage.spice     
+-------------------------------------------|-------------------------------------------
+current_steering_dac (1)                   |current_steering_dac (1)                   
+sky130_fd_pr__nfet_01v8 (172->62)          |sky130_fd_pr__nfet_01v8 (172->62)          
+sky130_fd_pr__pfet_01v8 (140->54)          |sky130_fd_pr__pfet_01v8 (140->54)          
+sky130_fd_pr__res_xhigh_po (2)             |sky130_fd_pr__res_xhigh_po (6->2)          
+sky130_fd_pr__cap_mim_m3_1 (5)             |sky130_fd_pr__cap_mim_m3_1 (5)             
+Number of devices: 124                     |Number of devices: 124                     
+Number of nets: 72                         |Number of nets: 72                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes dac_with_output_stage_lvs.spice and dac_with_output_stage.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.
