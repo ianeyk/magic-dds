@@ -1,0 +1,190 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell unit_cell_decoder in circuit current_steering_dac (0)(60 instances)
+Flattening unmatched subcell current_steering_cell in circuit current_steering_dac (0)(32 instances)
+Flattening unmatched subcell dummy_current_steering_cell in circuit current_steering_dac (0)(28 instances)
+Flattening unmatched subcell half_dac_for_mirroring in circuit current_steering_dac (1)(2 instances)
+Flattening unmatched subcell dummy_current_steering_dac_unit_cell_with_encoder in circuit current_steering_dac (1)(28 instances)
+Flattening unmatched subcell current_steering_dac_unit_cell_with_encoder in circuit current_steering_dac (1)(32 instances)
+
+Class current_steering_dac (0):  Merged 4 parallel devices.
+Class current_steering_dac (1):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: current_steering_dac            |Circuit 2: current_steering_dac            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (240->236)         |sky130_fd_pr__pfet_01v8 (240->236)         
+sky130_fd_pr__nfet_01v8 (480)              |sky130_fd_pr__nfet_01v8 (480)              
+Number of devices: 716                     |Number of devices: 716                     
+Number of nets: 374                        |Number of nets: 374                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 401 symmetries.
+
+Subcircuit pins:
+Circuit 1: current_steering_dac            |Circuit 2: current_steering_dac            
+-------------------------------------------|-------------------------------------------
+Vbn                                        |Vbn                                        
+Vcn                                        |Vcn                                        
+I2                                         |I2                                         
+I1                                         |I1                                         
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+Y1                                         |Y1                                         
+Y0                                         |Y0                                         
+Y3                                         |Y3                                         
+Y2                                         |Y2                                         
+X3                                         |X3                                         
+X2                                         |X2                                         
+X1                                         |X1                                         
+X0                                         |X0                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes current_steering_dac and current_steering_dac are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po and Circuit 2 cell sky130_fd_pr__res_xhigh_po are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_xhigh_po and sky130_fd_pr__res_xhigh_po are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell binary_decoder_4bit_lvs in circuit dac_with_output_stage_lvs.spice (0)(1 instance)
+Flattening unmatched subcell opamp_balanced_lvs in circuit dac_with_output_stage_lvs.spice (0)(2 instances)
+Flattening unmatched subcell bias_schematic_lvs in circuit dac_with_output_stage_lvs.spice (0)(2 instances)
+Flattening unmatched subcell opamp_balanced in circuit dac_with_output_stage.spice (1)(2 instances)
+Flattening unmatched subcell x4_bit_binary_decoder in circuit dac_with_output_stage.spice (1)(1 instance)
+Flattening unmatched subcell x2_bit_binary_decoder in circuit dac_with_output_stage.spice (1)(2 instances)
+Flattening unmatched subcell switched_capacitor_transmission_gate in circuit dac_with_output_stage.spice (1)(2 instances)
+Flattening unmatched subcell bias in circuit dac_with_output_stage.spice (1)(2 instances)
+
+Class dac_with_output_stage_lvs.spice (0):  Merged 196 parallel devices.
+Class dac_with_output_stage.spice (1):  Merged 197 parallel devices.
+Class dac_with_output_stage.spice (1):  Merged 4 series devices.
+Subcircuit summary:
+Circuit 1: dac_with_output_stage_lvs.spice |Circuit 2: dac_with_output_stage.spice     
+-------------------------------------------|-------------------------------------------
+current_steering_dac (1)                   |current_steering_dac (1)                   
+sky130_fd_pr__nfet_01v8 (172->62)          |sky130_fd_pr__nfet_01v8 (172->62)          
+sky130_fd_pr__pfet_01v8 (140->54)          |sky130_fd_pr__pfet_01v8 (140->54)          
+sky130_fd_pr__res_xhigh_po (2)             |sky130_fd_pr__res_xhigh_po (6->2)          
+sky130_fd_pr__cap_mim_m3_1 (4)             |sky130_fd_pr__cap_mim_m3_1 (5->4)          
+Number of devices: 123                     |Number of devices: 123                     
+Number of nets: 72 **Mismatch**            |Number of nets: 70 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: dac_with_output_stage_lvs.spice |Circuit 2: dac_with_output_stage.spice     
+
+---------------------------------------------------------------------------------------
+Net: Vout                                  |Net: Vout                                  
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__cap_mim_m3_1/1 = 2         
+                                           |                                           
+Net: GND                                   |Net: bias_1/VN                             
+  current_steering_dac/GND = 1             |  sky130_fd_pr__nfet_01v8/4 = 62           
+  sky130_fd_pr__nfet_01v8/(1|3) = 38       |  sky130_fd_pr__nfet_01v8/(1|3) = 42       
+  sky130_fd_pr__nfet_01v8/4 = 62           |  sky130_fd_pr__nfet_01v8/2 = 10           
+  sky130_fd_pr__nfet_01v8/2 = 10           |  sky130_fd_pr__pfet_01v8/(1|3) = 4        
+  sky130_fd_pr__res_xhigh_po/3 = 2         |  current_steering_dac/GND = 1             
+  sky130_fd_pr__cap_mim_m3_1/2 = 3         |  sky130_fd_pr__res_xhigh_po/3 = 2         
+                                           |  sky130_fd_pr__cap_mim_m3_1/2 = 3         
+                                           |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: net12                                 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+                                           |                                           
+Net: net10                                 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: net11                                 |Net: opamp_balanced_1/V2                   
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: net9                                  |Net: opamp_balanced_0/Vout                 
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |  sky130_fd_pr__res_xhigh_po/(1|2) = 1     
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |Net: bias_1/VP                             
+  current_steering_dac/Y3 = 1              |  current_steering_dac/Y3 = 1              
+  current_steering_dac/X0 = 1              |  current_steering_dac/X0 = 1              
+  current_steering_dac/VDD = 1             |  current_steering_dac/VDD = 1             
+  sky130_fd_pr__pfet_01v8/4 = 54           |  sky130_fd_pr__pfet_01v8/4 = 54           
+  sky130_fd_pr__pfet_01v8/(1|3) = 34       |  sky130_fd_pr__pfet_01v8/(1|3) = 34       
+  sky130_fd_pr__pfet_01v8/2 = 6            |  sky130_fd_pr__pfet_01v8/2 = 6            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: net2                                  |Net: opamp_balanced_0/V2                   
+  current_steering_dac/I2 = 1              |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/2 = 1            |  current_steering_dac/I1 = 1              
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |  sky130_fd_pr__res_xhigh_po/(1|2) = 1     
+                                           |                                           
+Net: net1                                  |Net: opamp_balanced_0/V1                   
+  current_steering_dac/I1 = 1              |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/2 = 1            |  current_steering_dac/I2 = 1              
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |  sky130_fd_pr__res_xhigh_po/(1|2) = 1     
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: phi1                                  |Net: phi1                                  
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
+                                           |                                           
+Net: phi2                                  |Net: phi2                                  
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: dac_with_output_stage_lvs.spice |Circuit 2: dac_with_output_stage.spice     
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v8:M7       |Instance: switched_capacitor_transmission_ 
+  (1,3) = (6,5)                            |  (1,3) = (125,6)                          
+  2 = 4                                    |  2 = 4                                    
+  4 = 97                                   |  4 = 97                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:M4       |Instance: switched_capacitor_transmission_ 
+  (1,3) = (5,5)                            |  (1,3) = (125,6)                          
+  2 = 4                                    |  2 = 4                                    
+  4 = 97                                   |  4 = 97                                   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8:M5       |Instance: switched_capacitor_transmission_ 
+  (1,3) = (6,5)                            |  (1,3) = (125,6)                          
+  2 = 4                                    |  2 = 4                                    
+  4 = 116                                  |  4 = 125                                  
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:M2       |Instance: switched_capacitor_transmission_ 
+  (1,3) = (5,5)                            |  (1,3) = (125,6)                          
+  2 = 4                                    |  2 = 4                                    
+  4 = 116                                  |  4 = 125                                  
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Cells have no pins;  pin matching not needed.
+Device classes dac_with_output_stage_lvs.spice and dac_with_output_stage.spice are equivalent.
+
+Final result: Netlists do not match.

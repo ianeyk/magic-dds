@@ -4,8 +4,8 @@ tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-use 2_bit_binary_decoder 2_bit_binary_decoder_0 1 0 290 0 1 40
 use 2_bit_binary_decoder 2_bit_binary_decoder_1 1 0 2180 0 1 40
+use 2_bit_binary_decoder 2_bit_binary_decoder_0 1 0 290 0 1 40
 port "x3" 10 3270 0 3270 0 li
 port "x2" 9 3010 0 3010 0 li
 port "x1" 8 2590 0 2590 0 li
@@ -30,59 +30,59 @@ node "b1" 13 67.3825 900 930 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "b0" 13 31.4708 340 930 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_1890_300#" 1023 218.4 1890 300 nw 0 0 0 0 72800 1080 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "b2" "b3" 1.93182
-cap "y1" "li_0_0#" 1.14521
-cap "x1" "y3" 0.212855
+cap "x2" "x3" 4.1129
+cap "y3" "x1" 0.212855
+cap "li_0_0#" "y1" 1.14521
 cap "x2" "x1" 2.5
 cap "y1" "y2" 2.5
-cap "b0" "b1" 1.93182
-cap "li_1890_0#" "x1" 1.14521
-cap "y3" "y2" 4.1129
+cap "w_1890_300#" "li_1890_0#" 1.7058
+cap "b3" "b2" 1.93182
 cap "b2" "b1" 0.785824
-cap "x2" "x3" 4.1129
-cap "li_1890_0#" "w_1890_300#" 1.7058
-cap "li_1890_0#" "y3" 1.47683
-cap "2_bit_binary_decoder_0/VP" "2_bit_binary_decoder_0/y1" -1.14521
+cap "y3" "li_1890_0#" 1.47683
+cap "b0" "b1" 1.93182
+cap "y3" "y2" 4.1129
+cap "x1" "li_1890_0#" 1.14521
+cap "2_bit_binary_decoder_0/b1" "2_bit_binary_decoder_0/b0" -1.93182
+cap "2_bit_binary_decoder_0/y2" "2_bit_binary_decoder_0/y1" -2.5
+cap "2_bit_binary_decoder_1/VP" "2_bit_binary_decoder_0/y1" -1.14521
 cap "2_bit_binary_decoder_0/y3" "2_bit_binary_decoder_0/y2" -2.05645
-cap "2_bit_binary_decoder_0/y1" "2_bit_binary_decoder_0/y2" -2.5
-cap "2_bit_binary_decoder_0/b0" "2_bit_binary_decoder_0/b1" -1.93182
 cap "2_bit_binary_decoder_1/b0" "2_bit_binary_decoder_0/b1" 0.47342
-cap "2_bit_binary_decoder_0/VP" "2_bit_binary_decoder_0/a_1010_n40#" 148.391
-cap "2_bit_binary_decoder_0/b1" "2_bit_binary_decoder_1/b0" 0.404998
-cap "2_bit_binary_decoder_0/VP" "2_bit_binary_decoder_1/a_n60_n10#" 1.23997
-cap "2_bit_binary_decoder_0/VP" "2_bit_binary_decoder_0/VN" 12.7653
-cap "2_bit_binary_decoder_1/a_n60_n10#" "2_bit_binary_decoder_0/a_1010_n40#" 6.11798
-cap "2_bit_binary_decoder_1/b1" "2_bit_binary_decoder_1/b0" -0.965909
-cap "2_bit_binary_decoder_0/b1" "2_bit_binary_decoder_0/VP" 0.227838
-cap "2_bit_binary_decoder_0/y3" "2_bit_binary_decoder_0/y2" -2.05645
-cap "2_bit_binary_decoder_0/b1" "2_bit_binary_decoder_1/a_n60_n10#" 0.0214341
-cap "2_bit_binary_decoder_1/b1" "2_bit_binary_decoder_0/a_1010_n40#" 0.0214341
-cap "2_bit_binary_decoder_1/y1" "2_bit_binary_decoder_0/y3" -0.212855
-cap "2_bit_binary_decoder_0/VP" "2_bit_binary_decoder_0/a_1330_n10#" 0.318644
-cap "2_bit_binary_decoder_0/VP" "2_bit_binary_decoder_1/y1" -1.14521
-cap "2_bit_binary_decoder_1/y1" "2_bit_binary_decoder_1/y2" -1.25
-cap "2_bit_binary_decoder_0/b0" "2_bit_binary_decoder_1/b0" 21.3635
-cap "2_bit_binary_decoder_0/VP" "2_bit_binary_decoder_0/b0" 7.44946
+cap "2_bit_binary_decoder_0/y3" "2_bit_binary_decoder_1/VP" 0.521892
 cap "2_bit_binary_decoder_1/a_n60_n10#" "2_bit_binary_decoder_0/b0" 0.357427
+cap "2_bit_binary_decoder_1/y1" "2_bit_binary_decoder_1/y2" -1.25
+cap "2_bit_binary_decoder_0/b1" "2_bit_binary_decoder_1/b0" 0.404998
+cap "2_bit_binary_decoder_1/VN" "2_bit_binary_decoder_1/VP" 12.7653
+cap "2_bit_binary_decoder_1/a_n60_n10#" "2_bit_binary_decoder_1/VP" 1.23997
 cap "2_bit_binary_decoder_1/b0" "2_bit_binary_decoder_0/a_1010_n40#" 0.35927
-cap "2_bit_binary_decoder_0/VP" "2_bit_binary_decoder_1/b0" 1.49845
-cap "2_bit_binary_decoder_0/VP" "2_bit_binary_decoder_0/y3" 0.521892
-cap "2_bit_binary_decoder_1/b1" "2_bit_binary_decoder_0/b0" 0.135875
+cap "2_bit_binary_decoder_0/a_1010_n40#" "2_bit_binary_decoder_1/b1" 0.0214341
+cap "2_bit_binary_decoder_0/b1" "2_bit_binary_decoder_1/VP" 0.227838
+cap "2_bit_binary_decoder_1/b0" "2_bit_binary_decoder_1/b1" -0.965909
+cap "2_bit_binary_decoder_0/y3" "2_bit_binary_decoder_0/y2" -2.05645
+cap "2_bit_binary_decoder_1/y1" "2_bit_binary_decoder_0/y3" -0.212855
+cap "2_bit_binary_decoder_0/a_1330_n10#" "2_bit_binary_decoder_1/VP" 0.318644
+cap "2_bit_binary_decoder_1/b0" "2_bit_binary_decoder_0/b0" 21.3635
+cap "2_bit_binary_decoder_1/y1" "2_bit_binary_decoder_1/VP" -1.14521
+cap "2_bit_binary_decoder_0/a_1010_n40#" "2_bit_binary_decoder_1/VP" 148.391
+cap "2_bit_binary_decoder_0/b1" "2_bit_binary_decoder_1/a_n60_n10#" 0.0214341
+cap "2_bit_binary_decoder_1/a_n60_n10#" "2_bit_binary_decoder_0/a_1010_n40#" 6.11798
+cap "2_bit_binary_decoder_1/b0" "2_bit_binary_decoder_1/VP" 1.49845
+cap "2_bit_binary_decoder_1/VP" "2_bit_binary_decoder_0/b0" 7.44946
 cap "2_bit_binary_decoder_1/y2" "2_bit_binary_decoder_1/y3" -4.1129
-cap "2_bit_binary_decoder_1/y2" "2_bit_binary_decoder_1/y1" -1.25
-cap "2_bit_binary_decoder_1/b1" "2_bit_binary_decoder_1/b0" -0.965909
-merge "2_bit_binary_decoder_1/VN" "2_bit_binary_decoder_0/VN" -81.14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 0 0 0 0 0 0 0 0 0 0
-merge "2_bit_binary_decoder_0/VN" "VSUBS"
+cap "2_bit_binary_decoder_1/b0" "2_bit_binary_decoder_1/b1" -0.965909
+cap "2_bit_binary_decoder_1/y1" "2_bit_binary_decoder_1/y2" -1.25
+cap "2_bit_binary_decoder_1/b1" "2_bit_binary_decoder_0/b0" 0.135875
 merge "2_bit_binary_decoder_0/y1" "y1" -29.2816 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
-merge "2_bit_binary_decoder_1/y1" "x1" -28.9873 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "2_bit_binary_decoder_0/VN" "2_bit_binary_decoder_1/VN" -81.14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 0 0 0 0 0 0 0 0 0 0
+merge "2_bit_binary_decoder_1/VN" "VSUBS"
 merge "2_bit_binary_decoder_0/y2" "y2" -26.2348 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "2_bit_binary_decoder_1/y1" "x1" -28.9873 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
 merge "2_bit_binary_decoder_1/y3" "x3" -29.4393 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
 merge "2_bit_binary_decoder_1/y2" "x2" -26.2348 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
 merge "2_bit_binary_decoder_0/y3" "y3" -29.7983 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
-merge "2_bit_binary_decoder_1/VP" "li_1890_0#" -430.955 0 0 0 0 -64400 -1580 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2400 -280 0 -400 0 0 0 0 0 0 0 0 0 0
-merge "li_1890_0#" "2_bit_binary_decoder_0/VP"
-merge "2_bit_binary_decoder_0/VP" "li_0_0#"
-merge "li_0_0#" "w_1890_300#"
+merge "2_bit_binary_decoder_0/VP" "li_0_0#" -430.955 0 0 0 0 -64400 -1580 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2400 -280 0 -400 0 0 0 0 0 0 0 0 0 0
+merge "li_0_0#" "2_bit_binary_decoder_1/VP"
+merge "2_bit_binary_decoder_1/VP" "li_1890_0#"
+merge "li_1890_0#" "w_1890_300#"
 merge "2_bit_binary_decoder_1/b0" "b2" -58.4412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
 merge "2_bit_binary_decoder_1/b1" "b3" -68.4696 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0 0 0
 merge "2_bit_binary_decoder_0/b0" "b0" -61.385 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
