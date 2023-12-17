@@ -76,85 +76,10 @@ sky130_fd_pr__pfet_01v8 (140->54)          |sky130_fd_pr__pfet_01v8 (140->54)
 sky130_fd_pr__res_xhigh_po (2)             |sky130_fd_pr__res_xhigh_po (6->2)          
 sky130_fd_pr__cap_mim_m3_1 (5)             |sky130_fd_pr__cap_mim_m3_1 (5)             
 Number of devices: 124                     |Number of devices: 124                     
-Number of nets: 72 **Mismatch**            |Number of nets: 74 **Mismatch**            
+Number of nets: 72                         |Number of nets: 72                         
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: dac_with_output_stage_lvs.spice |Circuit 2: dac_with_output_stage.spice     
-
----------------------------------------------------------------------------------------
-Net: net12                                 |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
-                                           |                                           
-Net: net10                                 |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: li_20710_34010#                       
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-(no matching net)                          |Net: li_20290_34010#                       
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: phi2                                  |Net: phi2                                  
-  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
-  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
-                                           |                                           
-Net: phi1                                  |Net: phi1                                  
-  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
-  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: GND                                   |Net: bias_1/VN                             
-  current_steering_dac/GND = 1             |  current_steering_dac/GND = 1             
-  sky130_fd_pr__nfet_01v8/(1|3) = 38       |  sky130_fd_pr__nfet_01v8/(1|3) = 38       
-  sky130_fd_pr__nfet_01v8/4 = 62           |  sky130_fd_pr__nfet_01v8/4 = 62           
-  sky130_fd_pr__nfet_01v8/2 = 10           |  sky130_fd_pr__nfet_01v8/2 = 10           
-  sky130_fd_pr__res_xhigh_po/3 = 2         |  sky130_fd_pr__res_xhigh_po/3 = 2         
-  sky130_fd_pr__cap_mim_m3_1/2 = 4         |  sky130_fd_pr__cap_mim_m3_1/2 = 4         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: net9                                  |Net: opamp_balanced_0/Vout                 
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |  sky130_fd_pr__res_xhigh_po/(1|2) = 1     
-  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: net11                                 |Net: opamp_balanced_1/V2                   
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__cap_mim_m3_1/2 = 1         |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: Vout                                  |Net: Vout                                  
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__cap_mim_m3_1/1 = 2         |  sky130_fd_pr__cap_mim_m3_1/1 = 2         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: VDD                                   |Net: bias_1/VP                             
-  current_steering_dac/Y3 = 1              |  current_steering_dac/Y3 = 1              
-  current_steering_dac/X0 = 1              |  current_steering_dac/X0 = 1              
-  current_steering_dac/VDD = 1             |  current_steering_dac/VDD = 1             
-  sky130_fd_pr__pfet_01v8/4 = 54           |  sky130_fd_pr__pfet_01v8/4 = 54           
-  sky130_fd_pr__pfet_01v8/(1|3) = 34       |  sky130_fd_pr__pfet_01v8/(1|3) = 34       
-  sky130_fd_pr__pfet_01v8/2 = 6            |  sky130_fd_pr__pfet_01v8/2 = 6            
----------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Net: net2                                  |Net: opamp_balanced_0/V2                   
@@ -166,32 +91,6 @@ Net: net1                                  |Net: opamp_balanced_0/V1
   current_steering_dac/I1 = 1              |  sky130_fd_pr__nfet_01v8/2 = 1            
   sky130_fd_pr__nfet_01v8/2 = 1            |  current_steering_dac/I2 = 1              
   sky130_fd_pr__res_xhigh_po/(1|2) = 1     |  sky130_fd_pr__res_xhigh_po/(1|2) = 1     
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: dac_with_output_stage_lvs.spice |Circuit 2: dac_with_output_stage.spice     
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__pfet_01v8:M7       |Instance: switched_capacitor_transmission_ 
-  (1,3) = (6,5)                            |  (1,3) = (6,4)                            
-  2 = 4                                    |  2 = 4                                    
-  4 = 97                                   |  4 = 97                                   
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8:M4       |Instance: switched_capacitor_transmission_ 
-  (1,3) = (6,5)                            |  (1,3) = (6,4)                            
-  2 = 4                                    |  2 = 4                                    
-  4 = 97                                   |  4 = 97                                   
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__nfet_01v8:M5       |Instance: switched_capacitor_transmission_ 
-  (1,3) = (6,5)                            |  (1,3) = (6,4)                            
-  2 = 4                                    |  2 = 4                                    
-  4 = 117                                  |  4 = 117                                  
-                                           |                                           
-Instance: sky130_fd_pr__nfet_01v8:M2       |Instance: switched_capacitor_transmission_ 
-  (1,3) = (6,5)                            |  (1,3) = (6,4)                            
-  2 = 4                                    |  2 = 4                                    
-  4 = 117                                  |  4 = 117                                  
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Cells have no pins;  pin matching not needed.

@@ -446,8 +446,8 @@ Xbias_1 bias_1/Vb bias_1/Vcn bias_1/Vcp Ibdac bias_1/VP bias_1/VN bias
 X0 Vout opamp_balanced_1/V2 sky130_fd_pr__cap_mim_m3_1 l=10 w=100
 X1 a_17560_33480# opamp_balanced_0/Vout bias_1/VN sky130_fd_pr__res_xhigh_po w=0.7 l=11.5
 X2 opamp_balanced_0/Vout bias_1/VN sky130_fd_pr__cap_mim_m3_1 l=10 w=100
-X3 c1_18130_34210# bias_1/VN sky130_fd_pr__cap_mim_m3_1 l=2.5 w=10
-X4 c1_20910_34210# bias_1/VN sky130_fd_pr__cap_mim_m3_1 l=2.5 w=10
+X3 li_20290_34010# bias_1/VN sky130_fd_pr__cap_mim_m3_1 l=2.5 w=10
+X4 li_20710_34010# bias_1/VN sky130_fd_pr__cap_mim_m3_1 l=2.5 w=10
 X5 a_17950_33480# a_17170_30740# bias_1/VN sky130_fd_pr__res_xhigh_po w=0.7 l=11.5
 X6 a_17560_33480# a_16780_30740# bias_1/VN sky130_fd_pr__res_xhigh_po w=0.7 l=11.5
 X7 opamp_balanced_0/V1 a_17170_30740# bias_1/VN sky130_fd_pr__res_xhigh_po w=0.7 l=11.5
