@@ -433,10 +433,10 @@ X4_bit_binary_decoder_0 4_bit_binary_decoder_0/b0 4_bit_binary_decoder_0/b1 4_bi
 + 4_bit_binary_decoder_0/b3 current_steering_dac_0/Y2 current_steering_dac_0/Y1 current_steering_dac_0/Y0
 + current_steering_dac_0/X1 current_steering_dac_0/X2 current_steering_dac_0/X3 bias_1/VP
 + bias_1/VN x4_bit_binary_decoder
-Xswitched_capacitor_transmission_gate_0 phi1 phi2 bias_1/VN bias_1/VP opamp_balanced_1/V2
-+ opamp_balanced_0/Vout bias_1/VN switched_capacitor_transmission_gate
-Xswitched_capacitor_transmission_gate_1 phi1 phi2 bias_1/VN bias_1/VP Vout opamp_balanced_1/V2
-+ bias_1/VN switched_capacitor_transmission_gate
+Xswitched_capacitor_transmission_gate_0 phi1 phi2 switched_capacitor_transmission_gate_0/C
++ bias_1/VP opamp_balanced_1/V2 opamp_balanced_0/Vout bias_1/VN switched_capacitor_transmission_gate
+Xswitched_capacitor_transmission_gate_1 phi1 phi2 switched_capacitor_transmission_gate_1/C
++ bias_1/VP Vout opamp_balanced_1/V2 bias_1/VN switched_capacitor_transmission_gate
 Xcurrent_steering_dac_0 bias_1/VP current_steering_dac_0/X1 current_steering_dac_0/X2
 + current_steering_dac_0/X3 current_steering_dac_0/Y0 current_steering_dac_0/Y1 current_steering_dac_0/Y2
 + bias_1/VP opamp_balanced_0/V2 opamp_balanced_0/V1 bias_1/VP bias_1/Vb bias_1/Vcn
@@ -446,8 +446,8 @@ Xbias_1 bias_1/Vb bias_1/Vcn bias_1/Vcp Ibdac bias_1/VP bias_1/VN bias
 X0 Vout opamp_balanced_1/V2 sky130_fd_pr__cap_mim_m3_1 l=10 w=100
 X1 a_17560_33480# opamp_balanced_0/Vout bias_1/VN sky130_fd_pr__res_xhigh_po w=0.7 l=11.5
 X2 opamp_balanced_0/Vout bias_1/VN sky130_fd_pr__cap_mim_m3_1 l=10 w=100
-X3 bias_1/VN bias_1/VN sky130_fd_pr__cap_mim_m3_1 l=2.5 w=10
-X4 bias_1/VN bias_1/VN sky130_fd_pr__cap_mim_m3_1 l=2.5 w=10
+X3 c1_18130_34210# bias_1/VN sky130_fd_pr__cap_mim_m3_1 l=2.5 w=10
+X4 c1_20910_34210# bias_1/VN sky130_fd_pr__cap_mim_m3_1 l=2.5 w=10
 X5 a_17950_33480# a_17170_30740# bias_1/VN sky130_fd_pr__res_xhigh_po w=0.7 l=11.5
 X6 a_17560_33480# a_16780_30740# bias_1/VN sky130_fd_pr__res_xhigh_po w=0.7 l=11.5
 X7 opamp_balanced_0/V1 a_17170_30740# bias_1/VN sky130_fd_pr__res_xhigh_po w=0.7 l=11.5
