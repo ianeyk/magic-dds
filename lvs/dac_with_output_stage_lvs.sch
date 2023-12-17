@@ -192,21 +192,21 @@ C {devices/lab_pin.sym} 1460 -20 0 0 {name=p6 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} 1460 0 0 0 {name=p7 sig_type=std_logic lab=Vcn}
 C {devices/lab_pin.sym} 1460 20 0 0 {name=p18 sig_type=std_logic lab=Vbn}
 C {sky130_fd_pr/res_xhigh_po.sym} 560 -250 3 0 {name=R1
-W=1
-L=1
+W=0.7
+L=34.5
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po.sym} 560 160 1 0 {name=R2
-W=1
-L=1
+W=0.7
+L=34.5
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
 C {madvlsi/gnd.sym} 560 140 2 0 {name=l1 lab=GND}
 C {madvlsi/gnd.sym} 560 -230 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 640 160 2 0 {name=p19 sig_type=std_logic lab=Vref}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 760 -70 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 760 -70 0 0 {name=C1 model=cap_mim_m3_1 W=100 L=10 MF=1 spiceprefix=X}
 C {madvlsi/nmos3.sym} 910 -170 1 0 {name=M5
 L=0.15
 W=4
@@ -241,7 +241,7 @@ C {devices/lab_pin.sym} 910 -200 1 0 {name=p20 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} 1210 -200 1 0 {name=p21 sig_type=std_logic lab=phi2}
 C {madvlsi/pmos3.sym} 910 -40 3 0 {name=M7
 L=0.15
-W=12
+W=10.2
 body=VDD
 nf=1
 mult=1
@@ -256,7 +256,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1210 -40 3 0 {name=M8
 L=0.15
-W=12
+W=10.2
 body=VDD
 nf=1
 mult=1
@@ -271,9 +271,9 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1210 -10 3 0 {name=p23 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} 910 -10 3 0 {name=p24 sig_type=std_logic lab=phi2}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1050 -70 0 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1050 -70 0 0 {name=C2 model=cap_mim_m3_1 W=10 L=2.5 MF=1 spiceprefix=X}
 C {devices/lab_pin.sym} 1460 -140 0 0 {name=p22 sig_type=std_logic lab=Vref}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1500 -330 1 0 {name=C3 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1500 -330 1 0 {name=C3 model=cap_mim_m3_1 W=100 L=10 MF=1 spiceprefix=X}
 C {madvlsi/nmos3.sym} 1350 -640 1 0 {name=M1
 L=0.15
 W=4
@@ -308,7 +308,7 @@ C {devices/lab_pin.sym} 1350 -670 1 0 {name=p25 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} 1650 -670 1 0 {name=p26 sig_type=std_logic lab=phi2}
 C {madvlsi/pmos3.sym} 1350 -510 3 0 {name=M3
 L=0.15
-W=12
+W=10.2
 body=VDD
 nf=1
 mult=1
@@ -323,7 +323,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1650 -510 3 0 {name=M4
 L=0.15
-W=12
+W=10.2
 body=VDD
 nf=1
 mult=1
@@ -338,10 +338,10 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1650 -480 3 0 {name=p27 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} 1350 -480 3 0 {name=p28 sig_type=std_logic lab=phi2}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -540 0 0 {name=C4 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 -540 0 0 {name=C4 model=cap_mim_m3_1 W=10 L=2.5 MF=1 spiceprefix=X}
 C {madvlsi/gnd.sym} 760 -40 0 0 {name=l7 lab=GND}
 C {madvlsi/gnd.sym} 1050 -40 0 0 {name=l8 lab=GND}
 C {madvlsi/gnd.sym} 1490 -510 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} 1630 -120 2 0 {name=p29 sig_type=std_logic lab=Vout}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1760 -300 0 0 {name=C5 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1760 -300 0 0 {name=C5 model=cap_mim_m3_1 W=100 L=60 MF=1 spiceprefix=X}
 C {madvlsi/gnd.sym} 1760 -270 0 0 {name=l10 lab=GND}
